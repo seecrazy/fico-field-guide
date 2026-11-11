@@ -1,0 +1,36 @@
+name: Update Feedback Badges
+
+# 每周一统计 useful / error Issue 标签，更新 badges.data.json 并提交。
+# 站点下次部署时静态带上徽章数据 —— 运行时零 API 调用（设计 §6.2）。
+on:
+  schedule:
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  issues: read
+  contents: write
+
+jobs:
+  badges:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 生成徽章数据
+        run: node scripts/gen-badges.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 有变化则提交
+        run: |
+          if git diff --quiet -- docs/.vitepress/theme/badges.data.json; then
+            echo "无徽章数据变化，跳过提交。"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/.vitepress/theme/badges.data.json
+          git commit -m "chore(badges): 更新读者反馈徽章数据 [skip ci]"
+          git push

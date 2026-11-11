@@ -1,0 +1,38 @@
+name: 🐞 这页有误 / 过时
+description: 报告内容错误或与你的系统行为不符
+labels: [error]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢勘误。请务必填写**系统版本**与**实际现象**——
+        没有版本和现象的勘误无法被处理。处理完成后维护者会关闭本 Issue，
+        页面徽章（「⚠️ 有未处理勘误」）随之消失。
+  - type: input
+    id: page
+    attributes:
+      label: 哪一页
+      description: 通常已由页面按钮预填，请勿修改
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 你的系统版本
+      placeholder: 例：ECC 6.0 EHP7 / S/4HANA 2021 FPS01
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 实际现象（按页面验证动作执行后发生了什么）
+      placeholder: 例：按页面步骤配置 WRX 后，MIGO 收货 FB03 仍无凭证
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: 正确做法（如果你已解决）
+      placeholder: 例：还需在 OBYC 的事务 WRX 下为评估类 3100 指定科目
+    validations:
+      required: false

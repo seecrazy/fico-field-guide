@@ -1,0 +1,23 @@
+name: Link Check
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # 每周一 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --max-retries 2
+            --exclude 'YOURCODE\.goatcounter\.com'
+            './docs/**/*.md'
+          # 死链不阻塞日常 PR（quality.yml 不含本任务）；
+          # 检测到死链时该步失败并自动开 Issue 跟踪，维护者有空时处理。
+          fail: true
+          issue: true

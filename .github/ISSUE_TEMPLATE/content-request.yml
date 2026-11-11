@@ -1,0 +1,31 @@
+name: 📝 希望增加内容
+description: 申请新页面或新报错条目（选题由每月搜索/访问榜单共同决定）
+labels: [content-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        选题机制说明见[贡献指南](/99-contribute/how-to-contribute)：
+        搜索无结果的高频词、`error` Issue 集中的主题会被优先写作。
+        你在这里描述得越具体（场景 + 卡住点 + 期望的验证判据），被选中的概率越高。
+  - type: input
+    id: topic
+    attributes:
+      label: 主题 / T-Code / 报错消息
+      placeholder: 例：F.13 自动清账规则总是清不掉 GR/IR
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 你在什么场景下卡住了
+      placeholder: 例：月结时 F.13 跑完 GR/IR 仍有余额，不知道该查清账规则还是凭证文本
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: 期望页面给出什么
+      placeholder: 例：一张「清不掉 → 按什么顺序查」的根因排序表
+    validations:
+      required: false

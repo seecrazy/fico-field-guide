@@ -1,0 +1,33 @@
+name: Quality Check
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  structure-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: 结构检查（验证三元组 / 验证日期 / 根因排序表）
+        run: npm run check
+      - name: 单元测试（frontmatter 解析 / 校验规则 / 索引与徽章生成）
+        run: npm test
+      - name: 构建冒烟（确认 VitePress 可编译、Mermaid 可渲染）
+        run: npm run docs:build
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

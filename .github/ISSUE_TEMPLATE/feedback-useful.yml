@@ -1,0 +1,23 @@
+name: 👍 这页有用
+description: 标记某页解决了你的问题（纯计数，无需回复）
+labels: [useful]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢！你提交后即可关闭本 Issue —— 它只用于计数，
+        每周一自动汇入页面徽章（「✅ N 人标记有用」），无人需要处理它。
+  - type: input
+    id: page
+    attributes:
+      label: 哪一页
+      description: 通常已由页面按钮预填，请勿修改
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: 补充说明（可选）
+      description: 例如：在哪个场景下帮到了你（ECC / S/4、哪个模块）
+    validations:
+      required: false

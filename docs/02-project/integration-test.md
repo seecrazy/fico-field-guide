@@ -102,3 +102,7 @@ sequenceDiagram
 ## 导出与执行
 
 本页所有表格可直接复制到 Excel 使用（保留表头即可），打印为纸质脚本由执行人逐步签字；「实际结果」与「结论」两列留空即勾选栏。交货事务（`VL01N`）与部分清账行为在 ECC 与 S/4HANA 间存在差异，以你的系统实测为准。
+
+## 下载模板
+
+- [集成测试脚本 CSV（P2P/O2C/月结三脚本表结构）](/templates/integration-test-script.csv)

@@ -37,7 +37,7 @@ npm install
 npm run dev
 ```
 
-本地预览地址：http://localhost:5173 。改动保存即热更，Mermaid 图直接渲染，写完看一眼再提交。
+本地预览地址：`http://localhost:5173` 。改动保存即热更，Mermaid 图直接渲染，写完看一眼再提交。
 
 ## 写作硬规则
 

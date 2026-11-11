@@ -1,0 +1,25 @@
+---
+title: 报错速查索引
+feedback: false
+---
+
+# 报错速查索引
+
+卡在一条报错上时，先按**消息号**（如 `F5 702`）或**现象文本关键词**（如「期间未开」「成本中心」）用顶栏搜索；命中条目后**从根因表第一行开始**，逐条执行「验证动作」，对上哪条就执行哪条的「修复动作」，最后跑条目底部的「验证 T-Code」确认收工。消息号在不同客户系统可能被增强替换，搜消息号没命中时改搜现象文本。
+
+## 条目总表
+
+| 条目 | 模块 | 典型场景 |
+|---|---|---|
+| [F5 100 — 总账科目在公司代码中不存在](/01-daily-ops/errors/f5-100) | FI-GL | 录凭证时报科目不存在 |
+| [F5 702 — 凭证借贷不平衡](/01-daily-ops/errors/f5-702) | FI-GL | 保存凭证时借贷合计不为零 |
+| [过账期间未开（OB52）](/01-daily-ops/errors/posting-period-not-open) | FI-GL | 月初/年结后第一笔被拦 |
+| [成本对象缺失](/01-daily-ops/errors/cost-center-missing) | CO | 损益科目过账要求成本中心 |
+| [GR/IR 科目清账失败](/01-daily-ops/errors/gr-ir-not-cleared) | MM-FI | 月结 F.13 清不掉 GR/IR |
+| [MIGO 收货但 FI 无凭证](/01-daily-ops/errors/migo-no-fi-doc) | MM-FI | 收货成功但没有会计凭证 |
+| [字段状态冲突](/01-daily-ops/errors/field-status-conflict) | FI-GL | 必输字段看不见或填不了 |
+| [MIRO 差异进错科目](/01-daily-ops/errors/miro-prd-wrong-account) | MM-FI | 发票价格差异落错科目 |
+| [AFAB 折旧过账报错](/01-daily-ops/errors/afab-depreciation-error) | FI-AA | 折旧跑不下去或事后不平 |
+| [外币汇率缺失（OB08）](/01-daily-ops/errors/exchange-rate-missing) | FI-GL | 外币凭证取不到汇率 |
+
+搜不到？去页面底部提「希望增加内容」——搜索无结果的高频词会被优先写成新条目（详见[怎么用这本手册](/00-about/how-to-use)）。

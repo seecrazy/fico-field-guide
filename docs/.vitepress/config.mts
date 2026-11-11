@@ -21,6 +21,7 @@ export default withMermaid(
     description:
       'FICO 顾问在项目里卡住时，30 秒内找到下一步动作：高频 T-Code 速查、报错根因排序、可自验的配置笔记。',
     head: [
+      ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
       // GoatCounter：无 cookie、隐私友好统计（站点代码 seecrazy）
       [
         'script',
@@ -36,6 +37,7 @@ export default withMermaid(
     sitemap: { hostname: 'https://seecrazy.github.io/fico-field-guide' },
 
     themeConfig: {
+      logo: '/logo.svg',
       nav: [
         { text: '日常运维', link: '/01-daily-ops/tcode-cards' },
         { text: '报错速查', link: '/01-daily-ops/errors/' },
@@ -142,9 +144,9 @@ export default withMermaid(
       startOnLoad: false,
       theme: 'base',
       themeVariables: {
-        primaryColor: '#e8f1fb',
-        primaryTextColor: '#213547',
-        primaryBorderColor: '#3c8dff',
+        primaryColor: '#dbeafe',
+        primaryTextColor: '#1e3a8a',
+        primaryBorderColor: '#2563eb',
         lineColor: '#7a8ba0',
         fontSize: '14px',
       },

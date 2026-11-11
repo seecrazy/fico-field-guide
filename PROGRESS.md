@@ -26,12 +26,13 @@
 | D 项目阶段 3 | `02-project/{blueprint-questions, integration-test, go-live-runbook}.md` | 23 问/三脚本 29 行/18 任务；F-28 收款、F-32 清账、AS91/ABLDT 口径正确 |
 | E 支撑页 2 | `00-about/version-matrix.md + 99-contribute/how-to-contribute.md` | 15 行差异全为公认事实（ACDOCA/新资产会计/ML 强制/FSCM/账目基 CO-PA），未编造 Note 号；三模板与 CI 字符串逐字一致 |
 
-## 浏览器验证（Playwright + preview 4173）
+## 浏览器验证（Playwright Chromium + preview 4173，9/9 通过）
 
 - Mermaid 客户端渲染为 SVG（首页 / 月结页）
 - 验证状态条（VerifiedBanner）与反馈按钮（FeedbackButtons）在内容页就位
-- T-Code 索引页 ≥55 行可查
-- 截图：`/tmp/vfg_home.png`、`/tmp/vfg_obyc.png`、`/tmp/vfg_tcode.png`
+- 三元组标记 / 根因表 / T-Code 索引 61 行 / 顶部搜索按钮，DOM 断言全过
+- **修复一处实证 bug**：VitePress 将 YAML 日期解析为 Date 对象，状态条曾显示 ISO 时间串——已在 `transformPageData` 归一化为 `YYYY-MM-DD` 后重验通过
+- 截图留档：`/tmp/vfg_home.png`、`/tmp/vfg_obyc.png`、`/tmp/vfg_tcode.png`
 
 ## 量化交付
 

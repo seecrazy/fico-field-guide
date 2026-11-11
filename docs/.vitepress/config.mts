@@ -138,8 +138,11 @@ export default withMermaid(
     },
 
     transformPageData(pageData) {
-      const verifiedOn: unknown = pageData.frontmatter.verifiedOn
+      // VitePress 用 YAML 规则把日期字面量解析为 Date 对象，统一归一化为 YYYY-MM-DD 字符串
+      let verifiedOn: unknown = pageData.frontmatter.verifiedOn
+      if (verifiedOn instanceof Date) verifiedOn = verifiedOn.toISOString().slice(0, 10)
       if (typeof verifiedOn !== 'string') return
+      pageData.frontmatter.verifiedOn = verifiedOn
       const t = Date.parse(verifiedOn)
       if (Number.isNaN(t)) return
       const staleDays = Math.floor((Date.now() - t) / 86_400_000)

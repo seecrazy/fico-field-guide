@@ -27,5 +27,8 @@ feedback: false
 | [税码无效或不存在](/01-daily-ops/errors/tax-code-invalid) | FI-TAX | 发票过账被税配置拦下 |
 | [凭证号跳号或缺号](/01-daily-ops/errors/doc-number-gap) | FI-GL | 号码段缓冲跳号的审计核对 |
 | [付款到期日不对](/01-daily-ops/errors/due-date-wrong) | FI-AP | 付款条件与基准日算错到期日 |
+| [CO88 批量结算报错](/01-daily-ops/errors/co88-settlement-error) | CO-PC | 月结订单批量结算报错或中断 |
+| [销售单据被信贷冻结](/01-daily-ops/errors/credit-block) | FI-AR | 信贷检查拦截下单/交货/开票 |
+| [无权限执行事务](/01-daily-ops/errors/authorization-failed) | 基础 | SU53 定位权限到底缺什么 |
 
 搜不到？去页面底部提「希望增加内容」——搜索无结果的高频词会被优先写成新条目（详见[怎么用这本手册](/00-about/how-to-use)）。

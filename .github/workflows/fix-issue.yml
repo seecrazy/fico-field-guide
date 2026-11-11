@@ -1,0 +1,35 @@
+name: AI Fix Error Issue
+
+# 给勘误 Issue（error 标签）手动打上 ai-fix 标签后，AI 自动修订页面并开 PR。
+# 人工只做最后一步：review 并 merge PR。
+#
+# 启用条件：仓库 Settings → Secrets → Actions → 添加 GLM_API_KEY
+# （未配置密钥时本流程安全跳过，不影响其它工作流）。
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  ai-fix:
+    if: github.event.label.name == 'ai-fix'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: AI 修订并开 PR
+        run: node scripts/ai-fix-issue.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          AI_FIX_MODEL: ${{ vars.AI_FIX_MODEL }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}

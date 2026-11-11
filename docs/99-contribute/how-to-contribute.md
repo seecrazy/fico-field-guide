@@ -141,6 +141,17 @@ PR 触发 CI（`quality.yml`）：结构检查、单元测试、构建冒烟、g
 - **🐞 这页有误 / 过时**（`error`）：必须填**系统版本**与**实际现象**才会被处理——没有版本和现象的勘误无从验证；处理关闭后「⚠️ 有未处理勘误」徽章随之消失。
 - **📝 希望增加内容**（`content-request`）：进月度选题池，与搜索无结果词、error 集中页共同排序。
 
+## 维护者：勘误处理的三种姿势
+
+error Issue 进来后，从轻到重三选一：
+
+1. **AI 自动修复（最省）**：给 Issue 打 `ai-fix` 标签 → `fix-issue.yml` 自动调 GLM 按写作规范修订页面 → 过结构校验后自动开 PR → **维护者只 review 并 merge**。修订稿不过校验会自动回滚并在 Issue 下留言转人工。
+   - 启用一次即可：仓库 Settings → Secrets → Actions → 添加 `GLM_API_KEY`（模型可用仓库 Variables 的 `AI_FIX_MODEL` 指定，默认 glm-4.6）。
+2. **贴给 AI 助手半自动**：把 Issue 内容贴给任意 AI 编码助手，让它按模板改页面并跑 `npm run check && npm test`，你 review 后 commit + push。
+3. **手工修**：Issue 里读者已填「现象 + 正确做法」，通常只需把它合进根因表、更新 `verifiedOn`，两分钟。
+
+无论哪种：push 即发布，无手动步骤。处理完关闭 Issue，页面「⚠️ 有未处理勘误」徽章下次部署自动消失。
+
 ## 约定速查
 
 | 场景 | 约定 |

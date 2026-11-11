@@ -53,6 +53,7 @@ npm run dev        # 本地预览 http://localhost:5173
 1. 建仓 `seecrazy/fico-field-guide` 并 push main（deploy.yml 自动构建部署，已含质量闸门）。
 2. 仓库 Settings → Pages → Source 选 **GitHub Actions**。
 3. （可选）确认 [GoatCounter 后台](https://seecrazy.goatcounter.com) 已开通该站点代码，搜索词统计生效；不想要统计可删除 `config.mts` head 中那段 script。
+4. （可选，启用 AI 自动修勘误）Settings → Secrets → Actions → 添加 `GLM_API_KEY`；此后给 error Issue 打 `ai-fix` 标签即自动生成修复 PR，见[贡献指南](docs/99-contribute/how-to-contribute.md)。
 
 ## 许可证
 

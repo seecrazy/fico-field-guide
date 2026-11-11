@@ -52,6 +52,7 @@
 5. **VitePress dead link 默认严格**：裸 `http://localhost:5173` 也会被查——行内代码化即可；这是特性（构建期死链零容忍）。
 6. **npm 版本号**：vitepress-plugin-mermaid 1.x 已不在最新线，`^1.10.0` 会 notarget，用 `^2.0.17`。
 7. **`node --test` 的 glob 参数是 Node 21+ 特性**：CI 用 node 20 时 `node --test "tests/*.test.mjs"` 被当字面文件名直接失败（本地 Node 24 全绿掩盖了差异）。已改为显式文件列表，并在 Node 20/24 双版本验证。教训：本地与 CI 的 Node 大版本要矩阵对齐。
+8. **VitePress 部署到 GitHub Pages 项目页必须配 `base: '/<repo>/'`**：漏配时 CSS/JS 按根路径 `/assets/...` 引用、站内链接 `/xxx` 全部 404——线上表现为"无样式裸 HTML + 链接大量 404"。本地 preview 跑根路径完全正常，掩盖了问题（与坑 7 同一类：本地环境 ≠ 线上环境）。修复：config 加 base 后 VitePress 自动给资源/markdown 链接/public 资源加前缀；唯 head 里的静态资源（favicon）需手动拼 base。验证方式：preview 按子路径访问 + Playwright 监听 4xx。
 
 ## 遗留事项（非阻塞）
 
@@ -61,6 +62,7 @@
 
 ## 变更日志
 
+- 2026-11-12（凌晨）：线上"无样式 + 链接 404"事故修复——根因坑位 8（GitHub Pages 项目页子路径未配 base）。同步补一轮视觉品牌升级（深靛蓝配色/SVG logo/hero 渐变/卡片反馈/中文排版），并新增"子路径 preview + Playwright 4xx 监听"为发布前必跑验证。
 - 2026-11-11（夜）：内容全量扩充 v1.1——新增 14 页 + 报错库 6 条：年结清单（AJRW/AJAB 顺序铁律）、F110 全链、物料账结算、术语表 70 条、Fiori 对照、接手摸底、第一次月结动线、付款条件、银行对账、凭证号码段、中国本地化、CO-PA、并行账簿、Hypercare；报错库 10→16 条。侧边栏接线完成，T-Code 索引 61→79，站点 29→49 页，硬校验 15→29 文件 0 违规，21 测试全绿，构建 0 死链，浏览器回归 8/8（含新页 Mermaid/三元组/状态条）。配置笔记 5→13 篇。
 - 2026-11-11（晚二）：两项优化落地——quality.yml 改 Node 矩阵 [20, 24]（防再次出现本地过 CI 挂）；新增 stale-review.yml + stale-review.mjs（每月 1 号超期页面清单自动开 Issue，维护者侧"不过时"闭环），单测增至 21（Node 20/24 双验证）。
 - 2026-11-11（晚）：推送后 deploy CI 失败——根因为坑位 7（node --test glob 为 Node 21+ 特性），改显式文件列表并 Node 20/24 双验证；deploy.yml 顺手补 `issues: read` + `GH_TOKEN` 使部署时徽章数据实时生成。

@@ -14,14 +14,21 @@ const STALE_STALE_DAYS = 730
 // 仓库地址（反馈按钮 / 社交链接 / 徽章脚本的指向）
 export const REPO_URL = 'https://github.com/seecrazy/fico-field-guide'
 
+// 部署到 GitHub Pages 项目页（https://seecrazy.github.io/fico-field-guide/），
+// 必须声明子路径 base，否则资源与站内链接全部指向根路径 → 线上无样式 + 404。
+// 若未来换根域名部署（如自定义域），把 base 改回 '/' 即可。
+const BASE = '/fico-field-guide/'
+
 export default withMermaid(
   defineConfig({
     lang: 'zh-CN',
+    base: BASE,
     title: 'SAP FICO 顾问实战手册',
     description:
       'FICO 顾问在项目里卡住时，30 秒内找到下一步动作：高频 T-Code 速查、报错根因排序、可自验的配置笔记。',
     head: [
-      ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+      // head 里的静态资源路径不会自动拼 base，须手写完整子路径
+      ['link', { rel: 'icon', type: 'image/svg+xml', href: `${BASE}logo.svg` }],
       // GoatCounter：无 cookie、隐私友好统计（站点代码 seecrazy）
       [
         'script',

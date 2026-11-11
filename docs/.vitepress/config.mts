@@ -50,6 +50,8 @@ export default withMermaid(
           items: [
             { text: '怎么用这本手册', link: '/00-about/how-to-use' },
             { text: 'ECC 与 S/4 差异总表', link: '/00-about/version-matrix' },
+            { text: '术语表', link: '/00-about/glossary' },
+            { text: 'T-Code 与 Fiori 对照', link: '/00-about/fiori-mapping' },
             { text: '写作约定与占位符', link: '/00-about/conventions' },
           ],
         },
@@ -57,8 +59,11 @@ export default withMermaid(
           text: '日常运维',
           items: [
             { text: '月结检查清单', link: '/01-daily-ops/month-end-checklist' },
+            { text: '年结检查清单', link: '/01-daily-ops/year-end-checklist' },
+            { text: '第一次月结怎么准备', link: '/01-daily-ops/first-month-end' },
             { text: '高频 T-Code 卡片', link: '/01-daily-ops/tcode-cards' },
             { text: '报错速查', link: '/01-daily-ops/errors/' },
+            { text: '接手摸底清单', link: '/01-daily-ops/takeover-checklist' },
           ],
         },
         {
@@ -67,6 +72,7 @@ export default withMermaid(
             { text: '蓝图关键问题', link: '/02-project/blueprint-questions' },
             { text: '集成测试脚本模板', link: '/02-project/integration-test' },
             { text: '上线切换 Runbook', link: '/02-project/go-live-runbook' },
+            { text: '上线后 Hypercare 清单', link: '/02-project/hypercare' },
           ],
         },
         {
@@ -74,9 +80,17 @@ export default withMermaid(
           items: [
             { text: 'OBYC — MM-FI 自动记账', link: '/03-config-notes/mm-fi-obyc' },
             { text: '字段状态组', link: '/03-config-notes/gl-field-status' },
-            { text: 'S/4 新资产记账差异', link: '/03-config-notes/asset-s4-diff' },
+            { text: '凭证类型与号码段', link: '/03-config-notes/doc-type-number-range' },
+            { text: '付款条件与现金折扣', link: '/03-config-notes/payment-terms' },
+            { text: 'F110 自动付款', link: '/03-config-notes/ap-auto-payment' },
             { text: '特别总账标识', link: '/03-config-notes/ap-special-gl' },
+            { text: '银行对账', link: '/03-config-notes/bank-reconciliation' },
+            { text: 'S/4 新资产记账差异', link: '/03-config-notes/asset-s4-diff' },
+            { text: '并行账簿', link: '/03-config-notes/parallel-ledger' },
             { text: '成本中心分摊', link: '/03-config-notes/co-assessment' },
+            { text: 'CO-PA 获利能力分析', link: '/03-config-notes/co-pa' },
+            { text: '物料账结算（S/4）', link: '/03-config-notes/ml-closing-s4' },
+            { text: '中国本地化', link: '/03-config-notes/cn-localization' },
           ],
         },
         {

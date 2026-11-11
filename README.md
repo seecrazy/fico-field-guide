@@ -32,10 +32,10 @@ npm run dev        # 本地预览 http://localhost:5173
 
 | 区域 | 内容 |
 |---|---|
-| `docs/00-about/` | 使用路径 · ECC vs S/4 差异总表 · 写作约定 |
-| `docs/01-daily-ops/` | 月结清单 · 23 张 T-Code 卡片 · 报错速查库（每报错一页） |
-| `docs/02-project/` | 蓝图关键问题 · 集成测试模板 · 上线 Runbook |
-| `docs/03-config-notes/` | OBYC · 字段状态组 · S/4 资产差异 · 特别总账 · 成本分摊 |
+| `docs/00-about/` | 使用路径 · ECC vs S/4 差异总表 · 术语表 70 条 · T-Code/Fiori 对照 · 写作约定 |
+| `docs/01-daily-ops/` | 月结/年结/首次月结清单 · 接手摸底 · 23 张 T-Code 卡片 · 报错速查库 16 条 |
+| `docs/02-project/` | 蓝图关键问题 · 集成测试模板 · 上线 Runbook · Hypercare 清单 |
+| `docs/03-config-notes/` | OBYC · 字段状态组 · 凭证号码段 · 付款条件 · F110 自动付款 · 特别总账 · 银行对账 · S/4 资产差异 · 并行账簿 · 成本分摊 · CO-PA · 物料账结算 · 中国本地化（13 篇） |
 | `docs/99-contribute/` | 贡献指南（含全部写作模板） |
 
 ## 贡献

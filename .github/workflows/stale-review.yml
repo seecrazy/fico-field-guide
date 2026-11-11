@@ -1,0 +1,37 @@
+name: Stale Review Reminder
+
+# 每月 1 号扫描全站 verifiedOn，超期页面清单自动开 Issue 提醒复核。
+# 与站点侧读者降级提示互补：那条作用于读者，这条作用于维护者。
+# 复核后更新 frontmatter verifiedOn 即自动退出下月清单。
+on:
+  schedule:
+    - cron: '0 2 1 * *' # 每月 1 号 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: 扫描超期页面
+        run: node scripts/stale-review.mjs --markdown > stale-report.md
+      - name: 清单非空则开 Issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if grep -q '^| ' stale-report.md; then
+            gh issue create \
+              --title "⏰ 月度过期复核提醒（$(date +%Y-%m)）" \
+              --body-file stale-report.md \
+              --repo "$GITHUB_REPOSITORY"
+            echo "已创建复核提醒 Issue。"
+          else
+            echo "没有超期页面，跳过。"
+          fi

@@ -7,12 +7,17 @@ on:
 
 jobs:
   structure-and-tests:
+    # Node 矩阵：本地常用 24、CI 基线 20 —— 大版本行为差异（如 --test glob）在 PR 阶段就暴露
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 24]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: ${{ matrix.node }}
           cache: npm
       - run: npm ci
       - name: 结构检查（验证三元组 / 验证日期 / 根因排序表）

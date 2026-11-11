@@ -11,7 +11,8 @@
     "check": "node scripts/check-structure.mjs",
     "tcode-index": "node scripts/gen-tcode-index.mjs",
     "badges": "node scripts/gen-badges.mjs --if-missing",
-    "test": "node --test tests/frontmatter.test.mjs tests/validate.test.mjs tests/tcode-index.test.mjs tests/badges.test.mjs"
+    "test": "node --test tests/frontmatter.test.mjs tests/validate.test.mjs tests/tcode-index.test.mjs tests/badges.test.mjs tests/stale.test.mjs",
+    "stale-review": "node scripts/stale-review.mjs"
   },
   "devDependencies": {
     "mermaid": "^11.4.1",

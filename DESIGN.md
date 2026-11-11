@@ -124,7 +124,8 @@ fico-field-guide/
 │   │   ├── deploy.yml                 # 构建部署（含 check+test 闸门）
 │   │   ├── quality.yml                # PR：结构检查 + 测试 + 构建冒烟 + gitleaks
 │   │   ├── link-check.yml             # 每周一 lychee，死链开 Issue 不阻塞 PR
-│   │   └── badges.yml                 # 每周一徽章数据刷新并提交
+│   │   ├── badges.yml                 # 每周一徽章数据刷新并提交
+│   │   └── stale-review.yml           # 每月 1 号超期页面复核提醒（开 Issue）
 │   └── ISSUE_TEMPLATE/
 │       ├── feedback-useful.yml        # useful（纯计数）
 │       ├── feedback-error.yml         # error（需版本+现象）
@@ -216,6 +217,8 @@ miniSearch（VitePress 本地搜索）对中文不分词，连续汉字整串成
 - `stale`（>24 个月）：红色「大概率已偏离当前版本」
 
 阈值集中定义于 `config.mts` 顶部常量（`STALE_WARN_DAYS = 365` / `STALE_STALE_DAYS = 730`）。
+
+**维护者侧闭环（v2.1 增补）**：`stale-review.yml` 每月 1 号扫描全站 `verifiedOn`，把超期页面清单（按最旧优先排序）自动开成 Issue 提醒复核；复核后更新 `verifiedOn` 即自动退出下月清单。与站点侧三级提示互补：降级条作用于读者，月度 Issue 作用于维护者。
 
 ### 6.3 T-Code 总索引
 

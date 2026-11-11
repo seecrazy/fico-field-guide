@@ -50,6 +50,7 @@
 4. **vitepress-plugin-mermaid**：当前线 2.x，peer 要求 mermaid 10/11 + vitepress 1.x；mermaid 12 不兼容。
 5. **VitePress dead link 默认严格**：裸 `http://localhost:5173` 也会被查——行内代码化即可；这是特性（构建期死链零容忍）。
 6. **npm 版本号**：vitepress-plugin-mermaid 1.x 已不在最新线，`^1.10.0` 会 notarget，用 `^2.0.17`。
+7. **`node --test` 的 glob 参数是 Node 21+ 特性**：CI 用 node 20 时 `node --test "tests/*.test.mjs"` 被当字面文件名直接失败（本地 Node 24 全绿掩盖了差异）。已改为显式文件列表，并在 Node 20/24 双版本验证。教训：本地与 CI 的 Node 大版本要矩阵对齐。
 
 ## 遗留事项（非阻塞）
 
@@ -59,4 +60,5 @@
 
 ## 变更日志
 
+- 2026-11-11（晚）：推送后 deploy CI 失败——根因为坑位 7（node --test glob 为 Node 21+ 特性），改显式文件列表并 Node 20/24 双验证；deploy.yml 顺手补 `issues: read` + `GH_TOKEN` 使部署时徽章数据实时生成。
 - 2026-11-11：v1 设计评审稿 → v2 优化定稿（10 项优化见 DESIGN.md §2）→ 全量开发完成：骨架 / 机制脚本 / 16 测试 / CI 四工作流 / 27 篇内容 / 浏览器渲染验证 / 13 本地提交。**未推送（按指示）。**

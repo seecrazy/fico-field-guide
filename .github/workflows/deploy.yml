@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  issues: read
 
 concurrency:
   group: pages
@@ -28,6 +29,9 @@ jobs:
       - run: npm run check
       - run: npm test
       - run: npm run docs:build
+        env:
+          # 让构建时徽章数据实时生成（gen-badges 读取 Issue 标签）
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist

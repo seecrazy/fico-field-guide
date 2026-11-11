@@ -44,6 +44,7 @@ export function ruleFor(relPath) {
 
 const WARN_EXEMPT = (rel) =>
   rel === 'docs/index.md' ||
+  rel === 'docs/01-daily-ops/errors/index.md' ||
   rel.startsWith('docs/00-about/') ||
   rel.startsWith('docs/99-contribute/') ||
   rel.startsWith('docs/public/') ||

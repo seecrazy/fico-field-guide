@@ -46,6 +46,7 @@ const WARN_EXEMPT = (rel) =>
   rel === 'docs/index.md' ||
   rel.startsWith('docs/00-about/') ||
   rel.startsWith('docs/99-contribute/') ||
+  rel.startsWith('docs/public/') ||
   rel === 'docs/tcode-index.md'
 
 export function validateContent(relPath, raw) {

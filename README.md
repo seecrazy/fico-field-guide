@@ -46,11 +46,13 @@ npm run dev        # 本地预览 http://localhost:5173
 - **2 分钟**：点「🐞 有误/过时」报勘误——填上系统版本与实际现象即可。
 - **30 分钟**：按模板写一页 → 本地 `npm run check && npm test && npm run docs:build` → PR（CI 自动校验）。
 
-## 部署（自建时改三处占位）
+## 部署
 
-1. 搜索替换 `YOURNAME`（`docs/.vitepress/config.mts` 的 `sitemap.hostname`、`theme/config.ts` 与 `config.mts` 的 `REPO_URL`）。
-2. `YOURCODE.goatcounter.com`（`config.mts` head 中统计脚本，不用统计可删除该行）。
-3. 仓库 Settings → Pages → Source 选 **GitHub Actions**，此后 push main 自动部署（deploy.yml 已含质量闸门）。
+仓库地址（`seecrazy`）、统计代码（GoatCounter `seecrazy`）与 sitemap 域名已注入完成。推送前只差一步：
+
+1. 建仓 `seecrazy/fico-field-guide` 并 push main（deploy.yml 自动构建部署，已含质量闸门）。
+2. 仓库 Settings → Pages → Source 选 **GitHub Actions**。
+3. （可选）确认 [GoatCounter 后台](https://seecrazy.goatcounter.com) 已开通该站点代码，搜索词统计生效；不想要统计可删除 `config.mts` head 中那段 script。
 
 ## 许可证
 

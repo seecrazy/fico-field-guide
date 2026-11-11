@@ -31,7 +31,7 @@ flowchart LR
 ## 环境准备
 
 ```bash
-git clone https://github.com/YOURNAME/fico-field-guide.git
+git clone https://github.com/seecrazy/fico-field-guide.git
 cd fico-field-guide
 npm install
 npm run dev

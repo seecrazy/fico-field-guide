@@ -53,7 +53,7 @@
 
 ## 遗留事项（非阻塞）
 
-- GoatCounter `YOURCODE` 与 `sitemap.hostname` / `REPO_URL` 中 `YOURNAME` 为部署占位，README「部署」一节有替换说明。
+- ~~GoatCounter 与 REPO_URL/sitemap 占位~~：已注入真实信息（GitHub 用户名 `seecrazy`、GoatCounter 站点代码 `seecrazy`），link-check 排除规则同步更新。推送后仅需 Settings → Pages 选 GitHub Actions。
 - badges.data.json 当前为占位数据（`--if-missing` 策略），接入真实仓库后每周一 badges.yml 自动刷新。
 - link-check / badges 两个定时工作流需 push 后在 GitHub 上生效。
 

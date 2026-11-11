@@ -11,8 +11,8 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 const STALE_WARN_DAYS = 365
 const STALE_STALE_DAYS = 730
 
-// 部署时替换为真实仓库地址（README「部署」一节有说明）
-export const REPO_URL = 'https://github.com/YOURNAME/fico-field-guide'
+// 仓库地址（反馈按钮 / 社交链接 / 徽章脚本的指向）
+export const REPO_URL = 'https://github.com/seecrazy/fico-field-guide'
 
 export default withMermaid(
   defineConfig({
@@ -21,11 +21,11 @@ export default withMermaid(
     description:
       'FICO 顾问在项目里卡住时，30 秒内找到下一步动作：高频 T-Code 速查、报错根因排序、可自验的配置笔记。',
     head: [
-      // GoatCounter：无 cookie、隐私友好统计。部署时将 YOURCODE 替换为实际站点代码。
+      // GoatCounter：无 cookie、隐私友好统计（站点代码 seecrazy）
       [
         'script',
         {
-          'data-goatcounter': 'https://YOURCODE.goatcounter.com/count',
+          'data-goatcounter': 'https://seecrazy.goatcounter.com/count',
           async: '',
           src: 'https://gc.zgo.at/count.js',
         },
@@ -33,7 +33,7 @@ export default withMermaid(
     ],
     cleanUrls: true,
     lastUpdated: true,
-    sitemap: { hostname: 'https://YOURNAME.github.io/fico-field-guide' },
+    sitemap: { hostname: 'https://seecrazy.github.io/fico-field-guide' },
 
     themeConfig: {
       nav: [

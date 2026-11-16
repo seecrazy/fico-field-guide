@@ -110,6 +110,18 @@ export default withMermaid(
           ],
         },
         {
+          text: '排查实战',
+          items: [
+            { text: '排查方法论', link: '/04-troubleshooting/playbook-intro' },
+            { text: '案例 01 — F5 100 科目层缺失', link: '/04-troubleshooting/case-f5-100' },
+            { text: '案例 02 — GR/IR 清不掉', link: '/04-troubleshooting/case-gr-ir' },
+            { text: '案例 03 — 期间未开', link: '/04-troubleshooting/case-period' },
+            { text: '案例 04 — MIGO 无 FI 凭证', link: '/04-troubleshooting/case-migo-no-fi' },
+            { text: '案例 05 — F110 零提案', link: '/04-troubleshooting/case-f110' },
+            { text: '案例 06 — AFAB 折旧跑不动', link: '/04-troubleshooting/case-afab' },
+          ],
+        },
+        {
           text: '速查与贡献',
           items: [
             { text: 'T-Code 总索引', link: '/tcode-index' },

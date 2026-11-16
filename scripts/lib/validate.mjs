@@ -38,6 +38,10 @@ export function ruleFor(relPath) {
   if (relPath.startsWith('docs/01-daily-ops/errors/')) {
     return relPath === 'docs/01-daily-ops/errors/index.md' ? null : 'hard'
   }
+  if (relPath.startsWith('docs/04-troubleshooting/')) {
+    // 排查案例页必须可自验（三元组+根因表）；intro 是方法论页不参与
+    return relPath === 'docs/04-troubleshooting/playbook-intro.md' ? null : 'hard'
+  }
   if (relPath === 'docs/01-daily-ops/error-cookbook.md') return 'hard'
   return null
 }

@@ -27,6 +27,9 @@ test('规则归属：配置笔记与报错页走硬校验', () => {
   assert.equal(ruleFor('docs/01-daily-ops/errors/index.md'), null)
   assert.equal(ruleFor('docs/01-daily-ops/error-cookbook.md'), 'hard')
   assert.equal(ruleFor('docs/01-daily-ops/tcode-cards.md'), null)
+  assert.equal(ruleFor('docs/01-daily-ops/tcode-cards/fb50.md'), null, '卡片详解页不参与三元组硬校验')
+  assert.equal(ruleFor('docs/04-troubleshooting/case-f5-100.md'), 'hard', '排查案例必须可自验')
+  assert.equal(ruleFor('docs/04-troubleshooting/playbook-intro.md'), null, '方法论页豁免')
 })
 
 test('合规配置笔记通过校验', () => {

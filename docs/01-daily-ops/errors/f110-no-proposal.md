@@ -5,6 +5,8 @@ severity: 高频
 tcodes: [F110, FBZP, FBL1N]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["付款没有提案", "F110 空跑", "付款运行选不中发票"]
 ---
 
 # F110 付款运行无提案 — 供应商全被排除

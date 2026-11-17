@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [FBN1, OBA7, FB03]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["凭证号跳号", "凭证缺号", "审计问号段"]
 ---
 
 # 凭证号跳号或缺号 — 号码段缓冲与审计核对

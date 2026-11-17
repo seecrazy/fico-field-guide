@@ -48,6 +48,7 @@ export function ruleFor(relPath) {
 
 const WARN_EXEMPT = (rel) =>
   rel === 'docs/index.md' ||
+  rel === 'docs/diagnose.md' ||
   rel === 'docs/01-daily-ops/errors/index.md' ||
   rel.startsWith('docs/00-about/') ||
   rel.startsWith('docs/99-contribute/') ||
@@ -72,6 +73,13 @@ export function validateContent(relPath, raw) {
     errors.push(`verifiedOn 不是合法日期(YYYY-MM-DD)：${data.verifiedOn}`)
   }
   if (!data.verifiedEnv) errors.push('frontmatter 缺少 verifiedEnv')
+  // 可信度分级（v1.5）：硬校验文件必须声明，且取值合法
+  const CONF_LEVELS = ['A', 'B', 'C', 'D']
+  if (!data.confidence) {
+    errors.push('frontmatter 缺少 confidence（可信度 A/B/C/D，定义见写作约定）')
+  } else if (!CONF_LEVELS.includes(String(data.confidence))) {
+    errors.push(`confidence 取值必须为 A/B/C/D，当前：${data.confidence}`)
+  }
 
   for (const mark of TRIPLE) {
     if (!body.includes(mark)) errors.push(`正文缺少「${mark}」（验证三元组，设计规则 1）`)

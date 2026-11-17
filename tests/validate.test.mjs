@@ -8,6 +8,7 @@ version: [ECC, S/4HANA]
 module: MM-FI
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为"
+confidence: B
 tcodes: [OBYC, MIGO]
 ---
 
@@ -49,10 +50,28 @@ verifiedOn: 2026-02-30
   const msgs = res.errors.join('\n')
   assert.match(msgs, /verifiedOn 不是合法日期/)
   assert.match(msgs, /verifiedEnv/)
+  assert.match(msgs, /confidence/)
   assert.match(msgs, /验证 T-Code/)
   assert.match(msgs, /验证判据/)
   assert.match(msgs, /失败对照/)
   assert.match(msgs, /\| 根因/)
+})
+
+test('confidence 非法取值被拒，A-D 合法', () => {
+  const mk = (c) => validateContent('docs/03-config-notes/c.md', `---
+title: x
+verifiedOn: 2026-11-11
+verifiedEnv: "e"
+confidence: ${c}
+---
+**验证 T-Code**：a
+**验证判据**：b
+**失败对照**：c
+| 根因（按概率） | 验证动作 | 修复动作 |
+`)
+  assert.match(mk('X').errors.join('\n'), /A\/B\/C\/D/)
+  assert.equal(mk('A').errors.length, 0)
+  assert.equal(mk('C').errors.length, 0)
 })
 
 test('完全无 frontmatter → 直接报缺 frontmatter', () => {

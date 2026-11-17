@@ -6,6 +6,8 @@
 
 **卡住时，30 秒找到下一步动作。**
 
+面向 SAP FI/CO 顾问的实战工作手册：**从业务问题出发**，快速定位报错根因、错误配置与验证方法——不做按模块堆知识的百科全书，做解决问题的工作工具。
+
 高频 T-Code 逐字段详解 · 报错按概率排根因 · 排查实战从报错反查配置 · 每篇可自验
 
 [![Deploy](https://github.com/seecrazy/fico-field-guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/seecrazy/fico-field-guide/actions/workflows/deploy.yml)
@@ -32,6 +34,16 @@
 
 </details>
 
+## 👥 适用人群
+
+| 人群 | 可以获得什么 |
+|---|---|
+| FICO 初级顾问 | 业务流程走账（P2P/O2C 每笔分录）、23 个 T-Code 逐字段上手 |
+| 中级顾问 | 报错根因排序速查、从报错反查配置的排查方法论、月结/年结对账 |
+| 高级顾问 | 跨模块集成场景（OBYC/物料账/并行账簿/CO-PC）、蓝图与切换清单复用 |
+| 项目经理 | 蓝图 23 问、集成测试三脚本、上线 Runbook、Hypercare 清单 |
+| 企业运维 | 月结/年结/摸底清单、标准报表导航、可下载工作模板 |
+
 ## ✨ 这本手册有什么不一样
 
 | | 常见 SAP 资料 | 本手册 |
@@ -45,7 +57,8 @@
 
 | 区域 | 内容 |
 |---|---|
-| [日常运维](./docs/01-daily-ops/tcode-cards.md) | 月结/年结清单 · **23 个 T-Code 逐字段详解** · 报错速查 19 条 · 接手摸底/首次月结 |
+| [日常运维](./docs/01-daily-ops/tcode-cards.md) | 月结/年结清单 · **23 个 T-Code 逐字段详解** · 报错速查 19 条 · **P2P/O2C 走账全解** · 对账专题 · 标准报表指南 · 接手摸底/首次月结 |
+| [问题诊断](./docs/diagnose.md) | **诊断中心**：按现象输入/点选，直达排查路径（25 个条目 × 58 个现象标签） |
 | [排查实战](./docs/04-troubleshooting/playbook-intro.md) | 三层排查方法论 · 6 个从报错反查配置的实战案例 |
 | [配置笔记](./docs/03-config-notes/mm-fi-obyc.md) | 20 篇：OBYC · 字段状态 · 付款条件 · F110 · 特别总账 · 银行对账 · 资产 · 并行账簿 · CO-PC 主线（标准成本/结算/WIP）· 物料账 · 信贷 · 迁移工具 · 权限 · 中国本地化（金税/增值税/暂估） |
 | [项目阶段](./docs/02-project/blueprint-questions.md) | 蓝图 23 问 · 集成测试三脚本 · 上线 Runbook 18 任务 · Hypercare 30 天 |
@@ -69,6 +82,21 @@ npm run dev    # http://localhost:5173
 | 30 分钟 | 按模板写一页 → 本地三道校验 → PR（[贡献指南](./docs/99-contribute/how-to-contribute.md) 含全部模板） |
 
 维护者：error Issue 打 `ai-fix` 标签即可自动生成修复 PR（[AI 修勘误](./docs/99-contribute/how-to-contribute.md)）。
+
+## 📊 内容规模
+
+94 个页面 · 21 篇配置笔记（全部含参数全解与边缘场景）· 19 条报错速查 · 23 个 T-Code 详解 · 7 篇排查实战 · 129 个 T-Code 索引 · 术语表 70 条 · 5 份可下载工作模板。全部内容标注**可信度分级**（A 实测 / B 官方文档口径 / C 方法论推演，定义见[写作约定](./docs/00-about/conventions.md)）——当前以 B/C 为主，升级为 A 的路径就是在真实系统跑一遍每页的验证三元组。
+
+## 🗺️ Roadmap
+
+| 阶段 | 目标 | 状态 |
+|---|---|---|
+| V1.0 | FICO 核心知识库、T-Code 索引、验证三元组与 CI | ✅ 已交付 |
+| V1.3 | T-Code 逐字段详解、排查实战系列、笔记深度化 | ✅ 已交付 |
+| V1.5 | 问题诊断中心、可信度分级、走账与对账主线 | ✅ 已交付 |
+| V1.8 | 配置关联图谱（配置项↔T-Code↔科目反查）、真实项目案例库 | 规划中 |
+| V2.0 | RAG 知识检索、AI 根因分析与排查报告生成 | 规划中 |
+| V2.5 | 安全的 SAP 系统只读集成、智能运维 | 探索中 |
 
 ## 📄 License
 

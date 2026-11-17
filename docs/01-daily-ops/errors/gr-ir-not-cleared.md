@@ -5,6 +5,8 @@ severity: 高频
 tcodes: [F.13, FBL3N, MB5S, F.19]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["GR/IR 清不掉", "GR/IR 余额不为零", "月结清账失败"]
 ---
 
 # GR/IR 科目余额不为零 — 月结 F.13 清账失败

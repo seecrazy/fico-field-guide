@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [FB08, FBRA, FBL3N]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["冲销不了", "FB08 失败", "已清账冲不掉"]
 ---
 
 # FB08 凭证冲销失败 — 已清账或跨期间

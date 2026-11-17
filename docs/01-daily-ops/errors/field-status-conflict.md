@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [OBC4, FS00, FB00, FB50]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["字段看不见", "字段填不了", "必输字段被抑制"]
 ---
 
 # 字段状态冲突 — 必输字段被抑制或字段不可见

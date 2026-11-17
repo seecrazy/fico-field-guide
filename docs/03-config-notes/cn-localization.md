@@ -6,6 +6,7 @@ difficulty: 高
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
 tcodes: [FTXP, OBBG, FBL1N, MIRO, FB60, VF01, VF11]
+confidence: B
 ---
 
 ## 一句话结论

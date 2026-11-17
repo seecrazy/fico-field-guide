@@ -46,6 +46,7 @@ export default withMermaid(
     themeConfig: {
       logo: '/logo.svg',
       nav: [
+        { text: '问题诊断', link: '/diagnose' },
         { text: '日常运维', link: '/01-daily-ops/tcode-cards' },
         { text: '报错速查', link: '/01-daily-ops/errors/' },
         { text: '项目阶段', link: '/02-project/blueprint-questions' },
@@ -54,6 +55,10 @@ export default withMermaid(
         { text: '版本差异', link: '/00-about/version-matrix' },
       ],
       sidebar: [
+        {
+          text: '问题诊断',
+          items: [{ text: '诊断中心（从现象进入）', link: '/diagnose' }],
+        },
         {
           text: '关于本手册',
           items: [

@@ -6,6 +6,7 @@ difficulty: 入门
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
 tcodes: [OBA7, OBN1, FBN1, FB03, FB50, OBH2, FB08]
+confidence: B
 ---
 
 ## 一句话结论

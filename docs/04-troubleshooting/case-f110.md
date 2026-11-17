@@ -4,6 +4,8 @@ module: FI-AP
 tcodes: [F110, FBZP, FBL1N]
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: C
+symptoms: ["完整排查演示：F110 零提案"]
 ---
 
 # 排查实战 05 — F110 零提案：从排除码反推主数据与 FBZP

@@ -5,6 +5,8 @@ severity: 高频
 tcodes: [SU53, PFCG, SUIM, SU01]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["没权限", "无权限执行事务", "SU53 排查"]
 ---
 
 # 无权限执行事务 — Authorization check failed（SU53）

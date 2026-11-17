@@ -1,0 +1,348 @@
+{
+  "generatedAt": "2026-11-17T11:52:51.233Z",
+  "entries": [
+    {
+      "url": "/01-daily-ops/errors/afab-depreciation-error",
+      "title": "AFAB 折旧过账报错或事后余额不平",
+      "module": "FI-AA",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "折旧跑不动",
+        "AFAB 报错",
+        "折旧余额不平"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/authorization-failed",
+      "title": "无权限执行事务 — Authorization check failed（SU53）",
+      "module": "基础",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "没权限",
+        "无权限执行事务",
+        "SU53 排查"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/co88-settlement-error",
+      "title": "CO88 批量结算报错 — 订单结算卡住月结",
+      "module": "CO-PC",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "订单结算报错",
+        "CO88 失败",
+        "批量结算卡住月结"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/cost-center-missing",
+      "title": "成本对象缺失 — FI 过账要求成本中心但未填或无效",
+      "module": "CO",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "要求成本中心",
+        "CO 对象缺失",
+        "损益科目过不了账"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/credit-block",
+      "title": "销售单据被信贷冻结 — Credit check blocked",
+      "module": "FI-AR",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "订单被冻结",
+        "信贷拦截",
+        "下单/交货/开票被信贷卡住"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/doc-number-gap",
+      "title": "凭证号跳号或缺号 — 号码段缓冲与审计核对",
+      "module": "FI-GL",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "凭证号跳号",
+        "凭证缺号",
+        "审计问号段"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/due-date-wrong",
+      "title": "付款到期日不对 — 付款条件与基准日计算",
+      "module": "FI-AP",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "到期日不对",
+        "付款到期日算错"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/exchange-rate-missing",
+      "title": "外币过账汇率缺失 — No exchange rate maintained（OB08）",
+      "module": "FI-GL",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "汇率缺失",
+        "外币过账报错"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/f110-no-proposal",
+      "title": "F110 付款运行无提案 — 供应商全被排除",
+      "module": "FI-AP",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "付款没有提案",
+        "F110 空跑",
+        "付款运行选不中发票"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/f5-100",
+      "title": "F5 100 — 总账科目在公司代码中不存在",
+      "module": "FI-GL",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "科目不存在",
+        "录凭证报科目错"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/f5-702",
+      "title": "F5 702 — 凭证借贷不平衡（事务货币余额不为零）",
+      "module": "FI-GL",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "借贷不平",
+        "凭证保存报余额不为零"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/field-status-conflict",
+      "title": "字段状态冲突 — 必输字段被抑制或字段不可见",
+      "module": "FI-GL",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "字段看不见",
+        "字段填不了",
+        "必输字段被抑制"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/gr-ir-not-cleared",
+      "title": "GR/IR 科目余额不为零 — 月结 F.13 清账失败",
+      "module": "MM-FI",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "GR/IR 清不掉",
+        "GR/IR 余额不为零",
+        "月结清账失败"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/migo-no-fi-doc",
+      "title": "MIGO 收货正常但 FI 无凭证 — OBYC 自动记账缺失",
+      "module": "MM-FI",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "收货没有 FI 凭证",
+        "MIGO 收货无凭证",
+        "收货成功但财务没账"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/miro-prd-wrong-account",
+      "title": "MIRO 发票校验差异进错科目 — PRD/UPF 配置偏差",
+      "module": "MM-FI",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "差异进错科目",
+        "发票校验差异串户"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/mmpv-cannot-close",
+      "title": "MMPV 无法关闭 MM 期间 — 存在未结事务",
+      "module": "MM",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "关不了月",
+        "MMPV 失败",
+        "MM 期间关不掉"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/posting-period-not-open",
+      "title": "过账期间未开 — Posting period 011 2026 not open（OB52）",
+      "module": "FI-GL",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "过不了账",
+        "期间未开",
+        "月初第一笔被拦"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/reversal-not-possible",
+      "title": "FB08 凭证冲销失败 — 已清账或跨期间",
+      "module": "FI-GL",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "冲销不了",
+        "FB08 失败",
+        "已清账冲不掉"
+      ]
+    },
+    {
+      "url": "/01-daily-ops/errors/tax-code-invalid",
+      "title": "税码无效或不存在 — 过账被税配置拦下",
+      "module": "FI-TAX",
+      "type": "报错速查",
+      "confidence": "B",
+      "symptoms": [
+        "税码无效",
+        "税码不存在",
+        "发票被税配置拦下"
+      ]
+    },
+    {
+      "url": "/04-troubleshooting/case-afab",
+      "title": "排查实战 06 — AFAB 折旧跑不动：从错误清单到技术清账",
+      "module": "FI-AA",
+      "type": "排查实战",
+      "confidence": "C",
+      "symptoms": [
+        "完整排查演示：折旧跑不动"
+      ]
+    },
+    {
+      "url": "/04-troubleshooting/case-f110",
+      "title": "排查实战 05 — F110 零提案：从排除码反推主数据与 FBZP",
+      "module": "FI-AP",
+      "type": "排查实战",
+      "confidence": "C",
+      "symptoms": [
+        "完整排查演示：F110 零提案"
+      ]
+    },
+    {
+      "url": "/04-troubleshooting/case-f5-100",
+      "title": "排查实战 01 — F5 100：从科目不存在到 FS00 科目层缺失",
+      "module": "FI-GL",
+      "type": "排查实战",
+      "confidence": "C",
+      "symptoms": [
+        "完整排查演示：科目不存在"
+      ]
+    },
+    {
+      "url": "/04-troubleshooting/case-gr-ir",
+      "title": "排查实战 02 — 月结 GR/IR 清不掉：从余额倒推清账链",
+      "module": "MM-FI",
+      "type": "排查实战",
+      "confidence": "C",
+      "symptoms": [
+        "完整排查演示：GR/IR 清不掉"
+      ]
+    },
+    {
+      "url": "/04-troubleshooting/case-migo-no-fi",
+      "title": "排查实战 04 — MIGO 收货无 FI 凭证：MM-FI 集成链反查",
+      "module": "MM-FI",
+      "type": "排查实战",
+      "confidence": "C",
+      "symptoms": [
+        "完整排查演示：收货没有 FI 凭证"
+      ]
+    },
+    {
+      "url": "/04-troubleshooting/case-period",
+      "title": "排查实战 03 — 月初第一笔过不了账：期间问题三层排查",
+      "module": "FI-GL",
+      "type": "排查实战",
+      "confidence": "C",
+      "symptoms": [
+        "完整排查演示：月初过不了账"
+      ]
+    }
+  ],
+  "tags": [
+    "折旧跑不动",
+    "AFAB 报错",
+    "折旧余额不平",
+    "没权限",
+    "无权限执行事务",
+    "SU53 排查",
+    "订单结算报错",
+    "CO88 失败",
+    "批量结算卡住月结",
+    "要求成本中心",
+    "CO 对象缺失",
+    "损益科目过不了账",
+    "订单被冻结",
+    "信贷拦截",
+    "下单/交货/开票被信贷卡住",
+    "凭证号跳号",
+    "凭证缺号",
+    "审计问号段",
+    "到期日不对",
+    "付款到期日算错",
+    "汇率缺失",
+    "外币过账报错",
+    "付款没有提案",
+    "F110 空跑",
+    "付款运行选不中发票",
+    "科目不存在",
+    "录凭证报科目错",
+    "借贷不平",
+    "凭证保存报余额不为零",
+    "字段看不见",
+    "字段填不了",
+    "必输字段被抑制",
+    "GR/IR 清不掉",
+    "GR/IR 余额不为零",
+    "月结清账失败",
+    "收货没有 FI 凭证",
+    "MIGO 收货无凭证",
+    "收货成功但财务没账",
+    "差异进错科目",
+    "发票校验差异串户",
+    "关不了月",
+    "MMPV 失败",
+    "MM 期间关不掉",
+    "过不了账",
+    "期间未开",
+    "月初第一笔被拦",
+    "冲销不了",
+    "FB08 失败",
+    "已清账冲不掉",
+    "税码无效",
+    "税码不存在",
+    "发票被税配置拦下",
+    "完整排查演示：折旧跑不动",
+    "完整排查演示：F110 零提案",
+    "完整排查演示：科目不存在",
+    "完整排查演示：GR/IR 清不掉",
+    "完整排查演示：收货没有 FI 凭证",
+    "完整排查演示：月初过不了账"
+  ]
+}

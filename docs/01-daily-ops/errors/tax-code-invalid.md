@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [FTXP, OBBG, FB60]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["税码无效", "税码不存在", "发票被税配置拦下"]
 ---
 
 # 税码无效或不存在 — 过账被税配置拦下

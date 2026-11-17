@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [OBYC, MIRO, MRBR]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["差异进错科目", "发票校验差异串户"]
 ---
 
 # MIRO 发票校验差异进错科目 — PRD/UPF 配置偏差

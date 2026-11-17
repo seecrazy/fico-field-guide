@@ -4,6 +4,8 @@ module: FI-AA
 tcodes: [AFAB, AFAR, AW01N, AS02]
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: C
+symptoms: ["完整排查演示：折旧跑不动"]
 ---
 
 # 排查实战 06 — AFAB 折旧跑不动：从错误清单到技术清账

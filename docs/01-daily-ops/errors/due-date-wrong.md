@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [OBB8, FBL1N, FB60]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["到期日不对", "付款到期日算错"]
 ---
 
 # 付款到期日不对 — 付款条件与基准日计算

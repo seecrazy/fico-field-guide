@@ -4,6 +4,8 @@ module: FI-GL
 tcodes: [OB52, OB29, MMPV, FB50]
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: C
+symptoms: ["完整排查演示：月初过不了账"]
 ---
 
 # 排查实战 03 — 月初第一笔过不了账：期间问题三层排查

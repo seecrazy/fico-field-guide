@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "vitepress dev docs",
-    "docs:build": "node scripts/gen-tcode-index.mjs && node scripts/gen-badges.mjs --if-missing && vitepress build docs",
+    "docs:build": "node scripts/gen-tcode-index.mjs && node scripts/gen-diagnosis.mjs && node scripts/gen-badges.mjs --if-missing && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "check": "node scripts/check-structure.mjs",
     "tcode-index": "node scripts/gen-tcode-index.mjs",

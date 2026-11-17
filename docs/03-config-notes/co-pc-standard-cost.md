@@ -6,6 +6,7 @@ difficulty: 高
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
 tcodes: [CK11N, CK24, CK40N, CK13N, CKR1, MM03, CK91N]
+confidence: B
 ---
 
 ## 一句话结论

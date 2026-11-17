@@ -5,6 +5,8 @@ severity: 高频
 tcodes: [OB52, MMPV, OB29]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["过不了账", "期间未开", "月初第一笔被拦"]
 ---
 
 # 过账期间未开 — Posting period 011 2026 not open（OB52）

@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [MMPV, MB51]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["关不了月", "MMPV 失败", "MM 期间关不掉"]
 ---
 
 # MMPV 无法关闭 MM 期间 — 存在未结事务

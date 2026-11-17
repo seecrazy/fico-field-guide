@@ -4,6 +4,8 @@ module: FI-GL
 tcodes: [SE91, FS00, FB50, OBD4]
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: C
+symptoms: ["完整排查演示：科目不存在"]
 ---
 
 # 排查实战 01 — F5 100：从科目不存在到 FS00 科目层缺失

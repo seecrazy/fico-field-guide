@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [CO88, KO88, KOB1, KKAO]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["订单结算报错", "CO88 失败", "批量结算卡住月结"]
 ---
 
 # CO88 批量结算报错 — 订单结算卡住月结

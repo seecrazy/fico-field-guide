@@ -5,6 +5,8 @@ severity: 高频
 tcodes: [KS03, KS01, OBA5, OKB9]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["要求成本中心", "CO 对象缺失", "损益科目过不了账"]
 ---
 
 # 成本对象缺失 — FI 过账要求成本中心但未填或无效

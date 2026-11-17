@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [VKM1, VKM3, FD32, OVA8]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["订单被冻结", "信贷拦截", "下单/交货/开票被信贷卡住"]
 ---
 
 # 销售单据被信贷冻结 — Credit check blocked

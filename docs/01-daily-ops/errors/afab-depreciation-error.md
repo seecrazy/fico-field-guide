@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [AFAB, AFAR, AW01N, OADB]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["折旧跑不动", "AFAB 报错", "折旧余额不平"]
 ---
 
 # AFAB 折旧过账报错或事后余额不平

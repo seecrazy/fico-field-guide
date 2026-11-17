@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [OB08, OBBS, FB50]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["汇率缺失", "外币过账报错"]
 ---
 
 # 外币过账汇率缺失 — No exchange rate maintained（OB08）

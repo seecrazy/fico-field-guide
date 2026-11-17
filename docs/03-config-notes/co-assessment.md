@@ -6,6 +6,7 @@ difficulty: 中
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
 tcodes: [KSU1, KSU2, KSU5, KSB1, KSV5, KSW1, KSW5, KB31N, KA02]
+confidence: B
 ---
 
 ## 一句话结论

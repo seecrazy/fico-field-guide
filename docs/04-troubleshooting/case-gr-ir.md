@@ -4,6 +4,8 @@ module: MM-FI
 tcodes: [FBL3N, MB5S, F.13, OBYC]
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: C
+symptoms: ["完整排查演示：GR/IR 清不掉"]
 ---
 
 # 排查实战 02 — 月结 GR/IR 清不掉：从余额倒推清账链

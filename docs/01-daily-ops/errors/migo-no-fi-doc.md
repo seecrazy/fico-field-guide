@@ -5,6 +5,8 @@ severity: 中频
 tcodes: [OBYC, OMWD, OMSY, MB51, FB03]
 verifiedOn: 2026-11-11
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
+confidence: B
+symptoms: ["收货没有 FI 凭证", "MIGO 收货无凭证", "收货成功但财务没账"]
 ---
 
 # MIGO 收货正常但 FI 无凭证 — OBYC 自动记账缺失

@@ -4,6 +4,13 @@ import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
 
+const CONF_LABEL: Record<string, string> = {
+  A: '实测验证（真实系统操作确认）',
+  B: '官方文档口径（按 SAP 标准行为撰写，未实测）',
+  C: '方法论推演（按标准流程推演，未实测）',
+  D: '待验证（社区贡献，未经核实）',
+}
+
 const info = computed(() => {
   const fm: any = frontmatter.value
   const verifiedOn: string | undefined = fm.verifiedOn
@@ -11,10 +18,10 @@ const info = computed(() => {
   const env: string = fm.verifiedEnv || '环境未标注'
   const level: string = fm.staleLevel || 'fresh'
   const days: number = fm.staleDays ?? 0
-  // 构建时已注入 staleDays，这里只做展示格式化
+  const conf: string = String(fm.confidence || '')
   const monthsAgo = Math.floor(days / 30)
   const ym = verifiedOn.slice(0, 7)
-  return { verifiedOn, env, level, days, monthsAgo, ym }
+  return { verifiedOn, env, level, days, monthsAgo, ym, conf }
 })
 
 const klass = computed(() => `vfg-banner vfg-banner--${info.value?.level ?? 'fresh'}`)
@@ -40,6 +47,10 @@ const klass = computed(() => `vfg-banner vfg-banner--${info.value?.level ?? 'fre
         本页验证于 <strong>{{ info.ym }}</strong>，已超过 24 个月未复核，内容大概率已偏离当前版本，务必自行验证。
       </span>
     </template>
+    <span v-if="info.conf && CONF_LABEL[info.conf]" class="vfg-conf">
+      <span class="vfg-conf__grade">可信度 {{ info.conf }}</span>
+      <span class="vfg-conf__label">{{ CONF_LABEL[info.conf] }}</span>
+    </span>
   </div>
 </template>
 
@@ -51,6 +62,10 @@ const klass = computed(() => `vfg-banner vfg-banner--${info.value?.level ?? 'fre
   font-size: 14px;
   line-height: 1.7;
   border: 1px solid transparent;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  align-items: baseline;
 }
 .vfg-banner__icon {
   margin-right: 6px;
@@ -66,5 +81,24 @@ const klass = computed(() => `vfg-banner vfg-banner--${info.value?.level ?? 'fre
 .vfg-banner--stale {
   background: rgba(239, 68, 68, 0.10);
   border-color: rgba(239, 68, 68, 0.45);
+}
+.vfg-conf {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}
+.vfg-conf__grade {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--vp-c-brand-2, #2563eb);
+  white-space: nowrap;
+}
+.vfg-conf__label {
+  font-size: 12px;
+  color: var(--vp-c-text-2);
 }
 </style>

@@ -6,6 +6,7 @@ difficulty: 中
 verifiedOn: 2026-11-12
 verifiedEnv: "SAP 标准行为（ECC 6.0 / S/4HANA 2023），示例公司代码 1000"
 tcodes: [OBC4, OB14, FS00, FB50, FB60, OBD4]
+confidence: B
 ---
 
 ## 一句话结论

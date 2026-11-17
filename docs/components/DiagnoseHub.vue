@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { withBase } from 'vitepress'
 import data from '../.vitepress/theme/diagnosis.data.json'
 
 const entries = (data as any).entries as Array<{
@@ -83,7 +84,7 @@ const reset = () => {
     </div>
 
     <div v-if="results.length" class="diag__results">
-      <a v-for="e in results" :key="e.url" :href="e.url" class="diag__card">
+      <a v-for="e in results" :key="e.url" :href="withBase(e.url)" class="diag__card">
         <div class="diag__card-head">
           <span class="diag__type" :class="`diag__type--${e.type === '排查实战' ? 'case' : 'error'}`">{{ e.type }}</span>
           <span class="diag__module">{{ e.module }}</span>
@@ -97,7 +98,7 @@ const reset = () => {
     </div>
     <div v-else class="diag__empty">
       没有匹配的排查路径。换个说法试试（如科目、期间、折旧、付款、清账），或去
-      <a href="/99-contribute/how-to-contribute">提一个内容请求</a>。
+      <a :href="withBase('/99-contribute/how-to-contribute')">提一个内容请求</a>。
     </div>
   </div>
 </template>

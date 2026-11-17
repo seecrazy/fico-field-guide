@@ -108,7 +108,7 @@ const typeClass = (t: string) => (t === 'T-Code' ? 'qj-t' : t === '消息号' ? 
       </a>
     </div>
     <div v-else-if="open && q.trim() && !results.length" class="qj__panel qj__panel--empty">
-      没有直达项，回车走顶部全文搜索，或去 <a :href="withBase('/diagnose')">问题诊断中心</a>
+      没有直达项。试 <a :href="withBase('/search')">全文搜索</a> 或 <a :href="withBase('/diagnose')">问题诊断中心</a>
     </div>
   </div>
 </template>

@@ -20,9 +20,9 @@ hero:
 features:
   - icon: ⚡
     title: 查得快
-    details: 高频 T-Code / 报错，3 次点击或 1 次搜索到达；T-Code 总索引反查任意事务码出现的页面。
-    link: /tcode-index
-    linkText: 打开 T-Code 总索引
+    details: 顶部直达条（⌘K）输 T-Code / 消息号即时直达；中文全文搜索按语义命中；按模块浏览与 140 个 T-Code 反查索引兜底。
+    link: /search
+    linkText: 打开全文搜索
   - icon: ✅
     title: 能自验
     details: 每篇配置笔记附「验证 T-Code + 验证判据 + 失败对照」三元组——你不需要相信作者，跑一遍就知道真假。

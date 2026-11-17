@@ -143,6 +143,7 @@ export default withMermaid(
           text: '速查与贡献',
           items: [
             { text: 'T-Code 总索引', link: '/tcode-index' },
+            { text: '按模块浏览', link: '/module-index' },
             { text: '如何贡献内容', link: '/99-contribute/how-to-contribute' },
           ],
         },

@@ -115,6 +115,13 @@
   max-width: 100%;
 }
 
+/* QuickJump 直达条容器：贴在页面顶部 */
+.qj-wrap {
+  border-bottom: 1px solid var(--vp-c-border);
+  background: var(--vp-c-bg);
+  padding: 0 24px;
+}
+
 /* 页面主体最大宽度略放宽，长表格更舒展 */
 .container .content-container {
   max-width: 800px;

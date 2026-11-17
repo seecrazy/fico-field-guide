@@ -6,10 +6,11 @@
   "private": true,
   "scripts": {
     "dev": "vitepress dev docs",
-    "docs:build": "node scripts/gen-tcode-index.mjs && node scripts/gen-diagnosis.mjs && node scripts/gen-badges.mjs --if-missing && vitepress build docs",
+    "docs:build": "node scripts/gen-tcode-index.mjs && node scripts/gen-module-index.mjs && node scripts/gen-diagnosis.mjs && node scripts/gen-quickjump.mjs && node scripts/gen-badges.mjs --if-missing && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "check": "node scripts/check-structure.mjs",
     "tcode-index": "node scripts/gen-tcode-index.mjs",
+    "module-index": "node scripts/gen-module-index.mjs",
     "badges": "node scripts/gen-badges.mjs --if-missing",
     "test": "node --test tests/frontmatter.test.mjs tests/validate.test.mjs tests/tcode-index.test.mjs tests/badges.test.mjs tests/stale.test.mjs",
     "stale-review": "node scripts/stale-review.mjs"

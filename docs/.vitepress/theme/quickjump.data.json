@@ -1,0 +1,1505 @@
+{
+  "generatedAt": "2026-11-17T13:43:44.301Z",
+  "items": [
+    {
+      "k": "FAGLL03",
+      "label": "FAGLL03 · FAGLL03 — 总账科目行项目显示（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fagll03",
+      "type": "T-Code"
+    },
+    {
+      "k": "FBL1N",
+      "label": "FBL1N · FBL1N — 供应商行项目清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fbl1n",
+      "type": "T-Code"
+    },
+    {
+      "k": "FBL3N",
+      "label": "FBL3N · FBL3N — 总账科目行项目清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fbl3n",
+      "type": "T-Code"
+    },
+    {
+      "k": "FBL5N",
+      "label": "FBL5N · FBL5N — 客户行项目清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fbl5n",
+      "type": "T-Code"
+    },
+    {
+      "k": "F110",
+      "label": "F110 · F110 自动付款 — FBZP 配置树与运行排错",
+      "url": "/03-config-notes/ap-auto-payment",
+      "type": "T-Code"
+    },
+    {
+      "k": "MIGO",
+      "label": "MIGO · MIGO — 收发货过账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/migo",
+      "type": "T-Code"
+    },
+    {
+      "k": "MIRO",
+      "label": "MIRO · MIRO — 发票校验过账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/miro",
+      "type": "T-Code"
+    },
+    {
+      "k": "FB50",
+      "label": "FB50 · FB50 — 总账凭证录入（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fb50",
+      "type": "T-Code"
+    },
+    {
+      "k": "FB03",
+      "label": "FB03 · FB03 — 凭证显示（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fb03",
+      "type": "T-Code"
+    },
+    {
+      "k": "AFAB",
+      "label": "AFAB · AFAB — 折旧过账运行（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/afab",
+      "type": "T-Code"
+    },
+    {
+      "k": "AS01",
+      "label": "AS01 · AS01 — 创建资产主数据（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/as01",
+      "type": "T-Code"
+    },
+    {
+      "k": "AW01N",
+      "label": "AW01N · S/4HANA 新资产会计 — 与 ECC 的关键差异",
+      "url": "/03-config-notes/asset-s4-diff",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSU5",
+      "label": "KSU5 · KSU5 — 实际分摊执行（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/ksu5",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSB1",
+      "label": "KSB1 · KSB1 — 成本中心实际行项目（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/ksb1",
+      "type": "T-Code"
+    },
+    {
+      "k": "CKMLCP",
+      "label": "CKMLCP · 物料分类账结算 — S/4 月结的第一道关",
+      "url": "/03-config-notes/ml-closing-s4",
+      "type": "T-Code"
+    },
+    {
+      "k": "FBKP",
+      "label": "FBKP · 特别总账标识 — 预付款、汇票与备选统驭科目",
+      "url": "/03-config-notes/ap-special-gl",
+      "type": "T-Code"
+    },
+    {
+      "k": "AFAR",
+      "label": "AFAR · 排查实战 06 — AFAB 折旧跑不动：从错误清单到技术清账",
+      "url": "/04-troubleshooting/case-afab",
+      "type": "T-Code"
+    },
+    {
+      "k": "OADB",
+      "label": "OADB · AFAB 折旧过账报错或事后余额不平",
+      "url": "/01-daily-ops/errors/afab-depreciation-error",
+      "type": "T-Code"
+    },
+    {
+      "k": "SU53",
+      "label": "SU53 · FICO 权限基础 — PFCG 角色与公司代码级控制",
+      "url": "/03-config-notes/authorization-basics",
+      "type": "T-Code"
+    },
+    {
+      "k": "PFCG",
+      "label": "PFCG · FICO 权限基础 — PFCG 角色与公司代码级控制",
+      "url": "/03-config-notes/authorization-basics",
+      "type": "T-Code"
+    },
+    {
+      "k": "SUIM",
+      "label": "SUIM · FICO 权限基础 — PFCG 角色与公司代码级控制",
+      "url": "/03-config-notes/authorization-basics",
+      "type": "T-Code"
+    },
+    {
+      "k": "SU01",
+      "label": "SU01 · FICO 权限基础 — PFCG 角色与公司代码级控制",
+      "url": "/03-config-notes/authorization-basics",
+      "type": "T-Code"
+    },
+    {
+      "k": "CO88",
+      "label": "CO88 · 生产订单成本归集与结算 — KO88/CO88",
+      "url": "/03-config-notes/co-pc-order-settlement",
+      "type": "T-Code"
+    },
+    {
+      "k": "KO88",
+      "label": "KO88 · 生产订单成本归集与结算 — KO88/CO88",
+      "url": "/03-config-notes/co-pc-order-settlement",
+      "type": "T-Code"
+    },
+    {
+      "k": "KOB1",
+      "label": "KOB1 · 生产订单成本归集与结算 — KO88/CO88",
+      "url": "/03-config-notes/co-pc-order-settlement",
+      "type": "T-Code"
+    },
+    {
+      "k": "KKAO",
+      "label": "KKAO · WIP 计算与差异分析 — KKAX/KKAO",
+      "url": "/03-config-notes/co-pc-wip-variance",
+      "type": "T-Code"
+    },
+    {
+      "k": "KS03",
+      "label": "KS03 · 成本对象缺失 — FI 过账要求成本中心但未填或无效",
+      "url": "/01-daily-ops/errors/cost-center-missing",
+      "type": "T-Code"
+    },
+    {
+      "k": "KS01",
+      "label": "KS01 · 成本对象缺失 — FI 过账要求成本中心但未填或无效",
+      "url": "/01-daily-ops/errors/cost-center-missing",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBA5",
+      "label": "OBA5 · 成本对象缺失 — FI 过账要求成本中心但未填或无效",
+      "url": "/01-daily-ops/errors/cost-center-missing",
+      "type": "T-Code"
+    },
+    {
+      "k": "OKB9",
+      "label": "OKB9 · 成本对象缺失 — FI 过账要求成本中心但未填或无效",
+      "url": "/01-daily-ops/errors/cost-center-missing",
+      "type": "T-Code"
+    },
+    {
+      "k": "VKM1",
+      "label": "VKM1 · 信贷管理 — 从简单信贷到 FSCM",
+      "url": "/03-config-notes/ar-credit-management",
+      "type": "T-Code"
+    },
+    {
+      "k": "VKM3",
+      "label": "VKM3 · 信贷管理 — 从简单信贷到 FSCM",
+      "url": "/03-config-notes/ar-credit-management",
+      "type": "T-Code"
+    },
+    {
+      "k": "FD32",
+      "label": "FD32 · 信贷管理 — 从简单信贷到 FSCM",
+      "url": "/03-config-notes/ar-credit-management",
+      "type": "T-Code"
+    },
+    {
+      "k": "OVA8",
+      "label": "OVA8 · 信贷管理 — 从简单信贷到 FSCM",
+      "url": "/03-config-notes/ar-credit-management",
+      "type": "T-Code"
+    },
+    {
+      "k": "FBN1",
+      "label": "FBN1 · 凭证类型与号码段 — 过账可追溯的骨架",
+      "url": "/03-config-notes/doc-type-number-range",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBA7",
+      "label": "OBA7 · 凭证类型与号码段 — 过账可追溯的骨架",
+      "url": "/03-config-notes/doc-type-number-range",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBB8",
+      "label": "OBB8 · 付款条件与现金折扣 — 到期日与清账金额的地基",
+      "url": "/03-config-notes/payment-terms",
+      "type": "T-Code"
+    },
+    {
+      "k": "FB60",
+      "label": "FB60 · 中国本地化 — 金税、增值税与应付暂估实践",
+      "url": "/03-config-notes/cn-localization",
+      "type": "T-Code"
+    },
+    {
+      "k": "OB08",
+      "label": "OB08 · 多币种与汇率 — 从录入到期末评估",
+      "url": "/03-config-notes/multi-currency",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBBS",
+      "label": "OBBS · 多币种与汇率 — 从录入到期末评估",
+      "url": "/03-config-notes/multi-currency",
+      "type": "T-Code"
+    },
+    {
+      "k": "FBZP",
+      "label": "FBZP · F110 自动付款 — FBZP 配置树与运行排错",
+      "url": "/03-config-notes/ap-auto-payment",
+      "type": "T-Code"
+    },
+    {
+      "k": "FS00",
+      "label": "FS00 · FS00 — 科目主数据集中维护（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fs00",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBD4",
+      "label": "OBD4 · 字段状态组 — 科目字段输入控制与冲突排查",
+      "url": "/03-config-notes/gl-field-status",
+      "type": "T-Code"
+    },
+    {
+      "k": "OB13",
+      "label": "OB13 · F5 100 — 总账科目在公司代码中不存在",
+      "url": "/01-daily-ops/errors/f5-100",
+      "type": "T-Code"
+    },
+    {
+      "k": "FB70",
+      "label": "FB70 · 付款条件与现金折扣 — 到期日与清账金额的地基",
+      "url": "/03-config-notes/payment-terms",
+      "type": "T-Code"
+    },
+    {
+      "k": "FB01",
+      "label": "FB01 · 数据迁移工具 — Migration Cockpit 与 LSMW 怎么选",
+      "url": "/03-config-notes/migration-tools",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBC4",
+      "label": "OBC4 · 字段状态组 — 科目字段输入控制与冲突排查",
+      "url": "/03-config-notes/gl-field-status",
+      "type": "T-Code"
+    },
+    {
+      "k": "FB00",
+      "label": "FB00 · 字段状态冲突 — 必输字段被抑制或字段不可见",
+      "url": "/01-daily-ops/errors/field-status-conflict",
+      "type": "T-Code"
+    },
+    {
+      "k": "F.13",
+      "label": "F.13 · F.13 — 自动清账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f13",
+      "type": "T-Code"
+    },
+    {
+      "k": "MB5S",
+      "label": "MB5S · 排查实战 02 — 月结 GR/IR 清不掉：从余额倒推清账链",
+      "url": "/04-troubleshooting/case-gr-ir",
+      "type": "T-Code"
+    },
+    {
+      "k": "F.19",
+      "label": "F.19 · F.19 — GR/IR 重分类清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f19",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBYC",
+      "label": "OBYC · OBYC — MM-FI 自动记账科目确定",
+      "url": "/03-config-notes/mm-fi-obyc",
+      "type": "T-Code"
+    },
+    {
+      "k": "OMWD",
+      "label": "OMWD · OBYC — MM-FI 自动记账科目确定",
+      "url": "/03-config-notes/mm-fi-obyc",
+      "type": "T-Code"
+    },
+    {
+      "k": "OMSY",
+      "label": "OMSY · OBYC — MM-FI 自动记账科目确定",
+      "url": "/03-config-notes/mm-fi-obyc",
+      "type": "T-Code"
+    },
+    {
+      "k": "MB51",
+      "label": "MB51 · MB51 — 物料凭证清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/mb51",
+      "type": "T-Code"
+    },
+    {
+      "k": "MRBR",
+      "label": "MRBR · MIRO 发票校验差异进错科目 — PRD/UPF 配置偏差",
+      "url": "/01-daily-ops/errors/miro-prd-wrong-account",
+      "type": "T-Code"
+    },
+    {
+      "k": "MMPV",
+      "label": "MMPV · MMPV — 关闭 MM 期间（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/mmpv",
+      "type": "T-Code"
+    },
+    {
+      "k": "OB52",
+      "label": "OB52 · OB52 — 开闭账期间维护（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/ob52",
+      "type": "T-Code"
+    },
+    {
+      "k": "OB29",
+      "label": "OB29 · 排查实战 03 — 月初第一笔过不了账：期间问题三层排查",
+      "url": "/04-troubleshooting/case-period",
+      "type": "T-Code"
+    },
+    {
+      "k": "FB08",
+      "label": "FB08 · FB08 — 凭证冲销（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fb08",
+      "type": "T-Code"
+    },
+    {
+      "k": "FBRA",
+      "label": "FBRA · FB08 凭证冲销失败 — 已清账或跨期间",
+      "url": "/01-daily-ops/errors/reversal-not-possible",
+      "type": "T-Code"
+    },
+    {
+      "k": "FTXP",
+      "label": "FTXP · 中国本地化 — 金税、增值税与应付暂估实践",
+      "url": "/03-config-notes/cn-localization",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBBG",
+      "label": "OBBG · 中国本地化 — 金税、增值税与应付暂估实践",
+      "url": "/03-config-notes/cn-localization",
+      "type": "T-Code"
+    },
+    {
+      "k": "VA01",
+      "label": "VA01 · CO-PA 获利能力分析 — 特征、值字段与两代架构",
+      "url": "/03-config-notes/co-pa",
+      "type": "T-Code"
+    },
+    {
+      "k": "VL01N",
+      "label": "VL01N · O2C 走账全解 — 从销售订单到收款的每一笔分录",
+      "url": "/01-daily-ops/flow-o2c",
+      "type": "T-Code"
+    },
+    {
+      "k": "VF01",
+      "label": "VF01 · 中国本地化 — 金税、增值税与应付暂估实践",
+      "url": "/03-config-notes/cn-localization",
+      "type": "T-Code"
+    },
+    {
+      "k": "F-28",
+      "label": "F-28 · O2C 走账全解 — 从销售订单到收款的每一笔分录",
+      "url": "/01-daily-ops/flow-o2c",
+      "type": "T-Code"
+    },
+    {
+      "k": "F-32",
+      "label": "F-32 · F-32 — 客户清账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-32",
+      "type": "T-Code"
+    },
+    {
+      "k": "ME21N",
+      "label": "ME21N · P2P 走账全解 — 从采购订单到付款的每一笔分录",
+      "url": "/01-daily-ops/flow-p2p",
+      "type": "T-Code"
+    },
+    {
+      "k": "F-53",
+      "label": "F-53 · F110 自动付款 — FBZP 配置树与运行排错",
+      "url": "/03-config-notes/ap-auto-payment",
+      "type": "T-Code"
+    },
+    {
+      "k": "FAGLB03",
+      "label": "FAGLB03 · 月结检查清单",
+      "url": "/01-daily-ops/month-end-checklist",
+      "type": "T-Code"
+    },
+    {
+      "k": "CKM3",
+      "label": "CKM3 · 物料分类账结算 — S/4 月结的第一道关",
+      "url": "/03-config-notes/ml-closing-s4",
+      "type": "T-Code"
+    },
+    {
+      "k": "F.01",
+      "label": "F.01 · 财务报表版本（FSV）— 从科目到资产负债表",
+      "url": "/03-config-notes/fsv-financial-statement",
+      "type": "T-Code"
+    },
+    {
+      "k": "F-44",
+      "label": "F-44 · F-44 — 供应商清账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-44",
+      "type": "T-Code"
+    },
+    {
+      "k": "F-47",
+      "label": "F-47 · F-47 — 预付款请求登记（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-47",
+      "type": "T-Code"
+    },
+    {
+      "k": "F-48",
+      "label": "F-48 · F-48 — 预付款过账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-48",
+      "type": "T-Code"
+    },
+    {
+      "k": "FAGLGVTR",
+      "label": "FAGLGVTR · 年结检查清单",
+      "url": "/01-daily-ops/year-end-checklist",
+      "type": "T-Code"
+    },
+    {
+      "k": "AJAB",
+      "label": "AJAB · 年结检查清单",
+      "url": "/01-daily-ops/year-end-checklist",
+      "type": "T-Code"
+    },
+    {
+      "k": "AJRW",
+      "label": "AJRW · 年结检查清单",
+      "url": "/01-daily-ops/year-end-checklist",
+      "type": "T-Code"
+    },
+    {
+      "k": "EC01",
+      "label": "EC01 · 蓝图关键问题清单",
+      "url": "/02-project/blueprint-questions",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBY6",
+      "label": "OBY6 · 蓝图关键问题清单",
+      "url": "/02-project/blueprint-questions",
+      "type": "T-Code"
+    },
+    {
+      "k": "KP26",
+      "label": "KP26 · 作业类型与作业价格 — CO 服务计价的引擎",
+      "url": "/03-config-notes/activity-type-price",
+      "type": "T-Code"
+    },
+    {
+      "k": "KB21N",
+      "label": "KB21N · 作业类型与作业价格 — CO 服务计价的引擎",
+      "url": "/03-config-notes/activity-type-price",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSII",
+      "label": "KSII · 作业类型与作业价格 — CO 服务计价的引擎",
+      "url": "/03-config-notes/activity-type-price",
+      "type": "T-Code"
+    },
+    {
+      "k": "F-54",
+      "label": "F-54 · 特别总账标识 — 预付款、汇票与备选统驭科目",
+      "url": "/03-config-notes/ap-special-gl",
+      "type": "T-Code"
+    },
+    {
+      "k": "FD33",
+      "label": "FD33 · 信贷管理 — 从简单信贷到 FSCM",
+      "url": "/03-config-notes/ar-credit-management",
+      "type": "T-Code"
+    },
+    {
+      "k": "UKM_BP",
+      "label": "UKM_BP · 信贷管理 — 从简单信贷到 FSCM",
+      "url": "/03-config-notes/ar-credit-management",
+      "type": "T-Code"
+    },
+    {
+      "k": "OAOA",
+      "label": "OAOA · S/4HANA 新资产会计 — 与 ECC 的关键差异",
+      "url": "/03-config-notes/asset-s4-diff",
+      "type": "T-Code"
+    },
+    {
+      "k": "ABUMN",
+      "label": "ABUMN · 资产转移与报废 — 生命周期末端处理",
+      "url": "/03-config-notes/asset-transfer-retirement",
+      "type": "T-Code"
+    },
+    {
+      "k": "ABAON",
+      "label": "ABAON · 资产转移与报废 — 生命周期末端处理",
+      "url": "/03-config-notes/asset-transfer-retirement",
+      "type": "T-Code"
+    },
+    {
+      "k": "ABAVN",
+      "label": "ABAVN · 资产转移与报废 — 生命周期末端处理",
+      "url": "/03-config-notes/asset-transfer-retirement",
+      "type": "T-Code"
+    },
+    {
+      "k": "ABT1N",
+      "label": "ABT1N · 资产转移与报废 — 生命周期末端处理",
+      "url": "/03-config-notes/asset-transfer-retirement",
+      "type": "T-Code"
+    },
+    {
+      "k": "AIBU",
+      "label": "AIBU · 在建工程（AuC）— 从投资归集到资产转固",
+      "url": "/03-config-notes/auc-settlement",
+      "type": "T-Code"
+    },
+    {
+      "k": "FF_5",
+      "label": "FF_5 · 银行对账 — 电子对账单导入与调节",
+      "url": "/03-config-notes/bank-reconciliation",
+      "type": "T-Code"
+    },
+    {
+      "k": "FF67",
+      "label": "FF67 · 银行对账 — 电子对账单导入与调节",
+      "url": "/03-config-notes/bank-reconciliation",
+      "type": "T-Code"
+    },
+    {
+      "k": "FEBAN",
+      "label": "FEBAN · 银行对账 — 电子对账单导入与调节",
+      "url": "/03-config-notes/bank-reconciliation",
+      "type": "T-Code"
+    },
+    {
+      "k": "VF11",
+      "label": "VF11 · 中国本地化 — 金税、增值税与应付暂估实践",
+      "url": "/03-config-notes/cn-localization",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSU1",
+      "label": "KSU1 · 成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSU2",
+      "label": "KSU2 · 成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSV5",
+      "label": "KSV5 · 成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSW1",
+      "label": "KSW1 · 成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "T-Code"
+    },
+    {
+      "k": "KSW5",
+      "label": "KSW5 · 成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "T-Code"
+    },
+    {
+      "k": "KB31N",
+      "label": "KB31N · 成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "T-Code"
+    },
+    {
+      "k": "KA02",
+      "label": "KA02 · 成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "T-Code"
+    },
+    {
+      "k": "KE30",
+      "label": "KE30 · CO-PA 获利能力分析 — 特征、值字段与两代架构",
+      "url": "/03-config-notes/co-pa",
+      "type": "T-Code"
+    },
+    {
+      "k": "KE21N",
+      "label": "KE21N · CO-PA 获利能力分析 — 特征、值字段与两代架构",
+      "url": "/03-config-notes/co-pa",
+      "type": "T-Code"
+    },
+    {
+      "k": "KE24",
+      "label": "KE24 · CO-PA 获利能力分析 — 特征、值字段与两代架构",
+      "url": "/03-config-notes/co-pa",
+      "type": "T-Code"
+    },
+    {
+      "k": "CO02",
+      "label": "CO02 · 生产订单成本归集与结算 — KO88/CO88",
+      "url": "/03-config-notes/co-pc-order-settlement",
+      "type": "T-Code"
+    },
+    {
+      "k": "CK11N",
+      "label": "CK11N · 标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "T-Code"
+    },
+    {
+      "k": "CK24",
+      "label": "CK24 · 标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "T-Code"
+    },
+    {
+      "k": "CK40N",
+      "label": "CK40N · 标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "T-Code"
+    },
+    {
+      "k": "CK13N",
+      "label": "CK13N · 标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "T-Code"
+    },
+    {
+      "k": "CKR1",
+      "label": "CKR1 · 标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "T-Code"
+    },
+    {
+      "k": "MM03",
+      "label": "MM03 · 标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "T-Code"
+    },
+    {
+      "k": "CK91N",
+      "label": "CK91N · 标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "T-Code"
+    },
+    {
+      "k": "KKAX",
+      "label": "KKAX · WIP 计算与差异分析 — KKAX/KKAO",
+      "url": "/03-config-notes/co-pc-wip-variance",
+      "type": "T-Code"
+    },
+    {
+      "k": "KKS2",
+      "label": "KKS2 · WIP 计算与差异分析 — KKAX/KKAO",
+      "url": "/03-config-notes/co-pc-wip-variance",
+      "type": "T-Code"
+    },
+    {
+      "k": "KKS1",
+      "label": "KKS1 · WIP 计算与差异分析 — KKAX/KKAO",
+      "url": "/03-config-notes/co-pc-wip-variance",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBN1",
+      "label": "OBN1 · 凭证类型与号码段 — 过账可追溯的骨架",
+      "url": "/03-config-notes/doc-type-number-range",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBH2",
+      "label": "OBH2 · 凭证类型与号码段 — 过账可追溯的骨架",
+      "url": "/03-config-notes/doc-type-number-range",
+      "type": "T-Code"
+    },
+    {
+      "k": "OB58",
+      "label": "OB58 · 财务报表版本（FSV）— 从科目到资产负债表",
+      "url": "/03-config-notes/fsv-financial-statement",
+      "type": "T-Code"
+    },
+    {
+      "k": "OB14",
+      "label": "OB14 · 字段状态组 — 科目字段输入控制与冲突排查",
+      "url": "/03-config-notes/gl-field-status",
+      "type": "T-Code"
+    },
+    {
+      "k": "KO01",
+      "label": "KO01 · 内部订单 — 临时成本归集的多面手",
+      "url": "/03-config-notes/internal-order",
+      "type": "T-Code"
+    },
+    {
+      "k": "KO02",
+      "label": "KO02 · 内部订单 — 临时成本归集的多面手",
+      "url": "/03-config-notes/internal-order",
+      "type": "T-Code"
+    },
+    {
+      "k": "LTMC",
+      "label": "LTMC · 数据迁移工具 — Migration Cockpit 与 LSMW 怎么选",
+      "url": "/03-config-notes/migration-tools",
+      "type": "T-Code"
+    },
+    {
+      "k": "LSMW",
+      "label": "LSMW · 数据迁移工具 — Migration Cockpit 与 LSMW 怎么选",
+      "url": "/03-config-notes/migration-tools",
+      "type": "T-Code"
+    },
+    {
+      "k": "XD01",
+      "label": "XD01 · 数据迁移工具 — Migration Cockpit 与 LSMW 怎么选",
+      "url": "/03-config-notes/migration-tools",
+      "type": "T-Code"
+    },
+    {
+      "k": "XK01",
+      "label": "XK01 · 数据迁移工具 — Migration Cockpit 与 LSMW 怎么选",
+      "url": "/03-config-notes/migration-tools",
+      "type": "T-Code"
+    },
+    {
+      "k": "OB22",
+      "label": "OB22 · 并行账簿 — 本地准则与国际准则并行记账",
+      "url": "/03-config-notes/parallel-ledger",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBB9",
+      "label": "OBB9 · 付款条件与现金折扣 — 到期日与清账金额的地基",
+      "url": "/03-config-notes/payment-terms",
+      "type": "T-Code"
+    },
+    {
+      "k": "VK11",
+      "label": "VK11 · SD 定价过程 — 一张发票金额怎么算出来的",
+      "url": "/03-config-notes/sd-pricing",
+      "type": "T-Code"
+    },
+    {
+      "k": "VK12",
+      "label": "VK12 · SD 定价过程 — 一张发票金额怎么算出来的",
+      "url": "/03-config-notes/sd-pricing",
+      "type": "T-Code"
+    },
+    {
+      "k": "VKOA",
+      "label": "VKOA · SD 收入科目确定 — 从定价条件到收入科目",
+      "url": "/03-config-notes/sd-revenue-account",
+      "type": "T-Code"
+    },
+    {
+      "k": "FF7A",
+      "label": "FF7A · 现金头寸与流动性监控 — 资金日管理入门",
+      "url": "/03-config-notes/tr-cash-position",
+      "type": "T-Code"
+    },
+    {
+      "k": "FF7B",
+      "label": "FF7B · 现金头寸与流动性监控 — 资金日管理入门",
+      "url": "/03-config-notes/tr-cash-position",
+      "type": "T-Code"
+    },
+    {
+      "k": "FF63",
+      "label": "FF63 · 现金头寸与流动性监控 — 资金日管理入门",
+      "url": "/03-config-notes/tr-cash-position",
+      "type": "T-Code"
+    },
+    {
+      "k": "GGB0",
+      "label": "GGB0 · 验证与替代 — 凭证的自动校验和自动补值",
+      "url": "/03-config-notes/validation-substitution",
+      "type": "T-Code"
+    },
+    {
+      "k": "GGB4",
+      "label": "GGB4 · 验证与替代 — 凭证的自动校验和自动补值",
+      "url": "/03-config-notes/validation-substitution",
+      "type": "T-Code"
+    },
+    {
+      "k": "OBBH",
+      "label": "OBBH · 验证与替代 — 凭证的自动校验和自动补值",
+      "url": "/03-config-notes/validation-substitution",
+      "type": "T-Code"
+    },
+    {
+      "k": "AS02",
+      "label": "AS02 · 排查实战 06 — AFAB 折旧跑不动：从错误清单到技术清账",
+      "url": "/04-troubleshooting/case-afab",
+      "type": "T-Code"
+    },
+    {
+      "k": "SE91",
+      "label": "SE91 · 排查实战 01 — F5 100：从科目不存在到 FS00 科目层缺失",
+      "url": "/04-troubleshooting/case-f5-100",
+      "type": "T-Code"
+    },
+    {
+      "k": "ST22",
+      "label": "ST22 · 排查方法论 — 从报错到错误配置",
+      "url": "/04-troubleshooting/playbook-intro",
+      "type": "T-Code"
+    },
+    {
+      "k": "SM35",
+      "label": "SM35 · 排查方法论 — 从报错到错误配置",
+      "url": "/04-troubleshooting/playbook-intro",
+      "type": "T-Code"
+    },
+    {
+      "k": "SLG1",
+      "label": "SLG1 · 排查方法论 — 从报错到错误配置",
+      "url": "/04-troubleshooting/playbook-intro",
+      "type": "T-Code"
+    },
+    {
+      "k": "写作约定与占位符",
+      "label": "写作约定与占位符",
+      "url": "/00-about/conventions",
+      "type": "页面"
+    },
+    {
+      "k": "经典 T-Code 与 Fiori 应用对照",
+      "label": "经典 T-Code 与 Fiori 应用对照",
+      "url": "/00-about/fiori-mapping",
+      "type": "页面"
+    },
+    {
+      "k": "术语表",
+      "label": "术语表",
+      "url": "/00-about/glossary",
+      "type": "页面"
+    },
+    {
+      "k": "怎么用这本手册",
+      "label": "怎么用这本手册",
+      "url": "/00-about/how-to-use",
+      "type": "页面"
+    },
+    {
+      "k": "ECC 与 S/4HANA 差异总表",
+      "label": "ECC 与 S/4HANA 差异总表",
+      "url": "/00-about/version-matrix",
+      "type": "页面"
+    },
+    {
+      "k": "AFAB 折旧过账报错或事后余额不平",
+      "label": "AFAB 折旧过账报错或事后余额不平",
+      "url": "/01-daily-ops/errors/afab-depreciation-error",
+      "type": "页面"
+    },
+    {
+      "k": "无权限执行事务 — Authorization check failed（SU53）",
+      "label": "无权限执行事务 — Authorization check failed（SU53）",
+      "url": "/01-daily-ops/errors/authorization-failed",
+      "type": "页面"
+    },
+    {
+      "k": "CO88 批量结算报错 — 订单结算卡住月结",
+      "label": "CO88 批量结算报错 — 订单结算卡住月结",
+      "url": "/01-daily-ops/errors/co88-settlement-error",
+      "type": "页面"
+    },
+    {
+      "k": "成本对象缺失 — FI 过账要求成本中心但未填或无效",
+      "label": "成本对象缺失 — FI 过账要求成本中心但未填或无效",
+      "url": "/01-daily-ops/errors/cost-center-missing",
+      "type": "页面"
+    },
+    {
+      "k": "销售单据被信贷冻结 — Credit check blocked",
+      "label": "销售单据被信贷冻结 — Credit check blocked",
+      "url": "/01-daily-ops/errors/credit-block",
+      "type": "页面"
+    },
+    {
+      "k": "凭证号跳号或缺号 — 号码段缓冲与审计核对",
+      "label": "凭证号跳号或缺号 — 号码段缓冲与审计核对",
+      "url": "/01-daily-ops/errors/doc-number-gap",
+      "type": "页面"
+    },
+    {
+      "k": "付款到期日不对 — 付款条件与基准日计算",
+      "label": "付款到期日不对 — 付款条件与基准日计算",
+      "url": "/01-daily-ops/errors/due-date-wrong",
+      "type": "页面"
+    },
+    {
+      "k": "外币过账汇率缺失 — No exchange rate maintained（OB08）",
+      "label": "外币过账汇率缺失 — No exchange rate maintained（OB08）",
+      "url": "/01-daily-ops/errors/exchange-rate-missing",
+      "type": "页面"
+    },
+    {
+      "k": "F110 付款运行无提案 — 供应商全被排除",
+      "label": "F110 付款运行无提案 — 供应商全被排除",
+      "url": "/01-daily-ops/errors/f110-no-proposal",
+      "type": "页面"
+    },
+    {
+      "k": "F5 100 — 总账科目在公司代码中不存在",
+      "label": "F5 100 — 总账科目在公司代码中不存在",
+      "url": "/01-daily-ops/errors/f5-100",
+      "type": "页面"
+    },
+    {
+      "k": "F5 702 — 凭证借贷不平衡（事务货币余额不为零）",
+      "label": "F5 702 — 凭证借贷不平衡（事务货币余额不为零）",
+      "url": "/01-daily-ops/errors/f5-702",
+      "type": "页面"
+    },
+    {
+      "k": "字段状态冲突 — 必输字段被抑制或字段不可见",
+      "label": "字段状态冲突 — 必输字段被抑制或字段不可见",
+      "url": "/01-daily-ops/errors/field-status-conflict",
+      "type": "页面"
+    },
+    {
+      "k": "GR/IR 科目余额不为零 — 月结 F.13 清账失败",
+      "label": "GR/IR 科目余额不为零 — 月结 F.13 清账失败",
+      "url": "/01-daily-ops/errors/gr-ir-not-cleared",
+      "type": "页面"
+    },
+    {
+      "k": "报错速查索引",
+      "label": "报错速查索引",
+      "url": "/01-daily-ops/errors/index",
+      "type": "页面"
+    },
+    {
+      "k": "MIGO 收货正常但 FI 无凭证 — OBYC 自动记账缺失",
+      "label": "MIGO 收货正常但 FI 无凭证 — OBYC 自动记账缺失",
+      "url": "/01-daily-ops/errors/migo-no-fi-doc",
+      "type": "页面"
+    },
+    {
+      "k": "MIRO 发票校验差异进错科目 — PRD/UPF 配置偏差",
+      "label": "MIRO 发票校验差异进错科目 — PRD/UPF 配置偏差",
+      "url": "/01-daily-ops/errors/miro-prd-wrong-account",
+      "type": "页面"
+    },
+    {
+      "k": "MMPV 无法关闭 MM 期间 — 存在未结事务",
+      "label": "MMPV 无法关闭 MM 期间 — 存在未结事务",
+      "url": "/01-daily-ops/errors/mmpv-cannot-close",
+      "type": "页面"
+    },
+    {
+      "k": "过账期间未开 — Posting period 011 2026 not open（OB52）",
+      "label": "过账期间未开 — Posting period 011 2026 not open（OB52）",
+      "url": "/01-daily-ops/errors/posting-period-not-open",
+      "type": "页面"
+    },
+    {
+      "k": "FB08 凭证冲销失败 — 已清账或跨期间",
+      "label": "FB08 凭证冲销失败 — 已清账或跨期间",
+      "url": "/01-daily-ops/errors/reversal-not-possible",
+      "type": "页面"
+    },
+    {
+      "k": "税码无效或不存在 — 过账被税配置拦下",
+      "label": "税码无效或不存在 — 过账被税配置拦下",
+      "url": "/01-daily-ops/errors/tax-code-invalid",
+      "type": "页面"
+    },
+    {
+      "k": "第一次月结怎么准备",
+      "label": "第一次月结怎么准备",
+      "url": "/01-daily-ops/first-month-end",
+      "type": "页面"
+    },
+    {
+      "k": "O2C 走账全解 — 从销售订单到收款的每一笔分录",
+      "label": "O2C 走账全解 — 从销售订单到收款的每一笔分录",
+      "url": "/01-daily-ops/flow-o2c",
+      "type": "页面"
+    },
+    {
+      "k": "P2P 走账全解 — 从采购订单到付款的每一笔分录",
+      "label": "P2P 走账全解 — 从采购订单到付款的每一笔分录",
+      "url": "/01-daily-ops/flow-p2p",
+      "type": "页面"
+    },
+    {
+      "k": "月结检查清单",
+      "label": "月结检查清单",
+      "url": "/01-daily-ops/month-end-checklist",
+      "type": "页面"
+    },
+    {
+      "k": "对账专题 — 月结勾稽的三张对账表",
+      "label": "对账专题 — 月结勾稽的三张对账表",
+      "url": "/01-daily-ops/reconciliation",
+      "type": "页面"
+    },
+    {
+      "k": "标准报表指南 — 拉数不迷路",
+      "label": "标准报表指南 — 拉数不迷路",
+      "url": "/01-daily-ops/standard-reports",
+      "type": "页面"
+    },
+    {
+      "k": "新接手公司代码的摸底清单",
+      "label": "新接手公司代码的摸底清单",
+      "url": "/01-daily-ops/takeover-checklist",
+      "type": "页面"
+    },
+    {
+      "k": "AFAB — 折旧过账运行（逐字段详解）",
+      "label": "AFAB — 折旧过账运行（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/afab",
+      "type": "页面"
+    },
+    {
+      "k": "AS01 — 创建资产主数据（逐字段详解）",
+      "label": "AS01 — 创建资产主数据（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/as01",
+      "type": "页面"
+    },
+    {
+      "k": "F-32 — 客户清账（逐字段详解）",
+      "label": "F-32 — 客户清账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-32",
+      "type": "页面"
+    },
+    {
+      "k": "F-44 — 供应商清账（逐字段详解）",
+      "label": "F-44 — 供应商清账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-44",
+      "type": "页面"
+    },
+    {
+      "k": "F-47 — 预付款请求登记（逐字段详解）",
+      "label": "F-47 — 预付款请求登记（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-47",
+      "type": "页面"
+    },
+    {
+      "k": "F-48 — 预付款过账（逐字段详解）",
+      "label": "F-48 — 预付款过账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f-48",
+      "type": "页面"
+    },
+    {
+      "k": "F.13 — 自动清账（逐字段详解）",
+      "label": "F.13 — 自动清账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f13",
+      "type": "页面"
+    },
+    {
+      "k": "F.19 — GR/IR 重分类清单（逐字段详解）",
+      "label": "F.19 — GR/IR 重分类清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/f19",
+      "type": "页面"
+    },
+    {
+      "k": "FAGLL03 — 总账科目行项目显示（逐字段详解）",
+      "label": "FAGLL03 — 总账科目行项目显示（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fagll03",
+      "type": "页面"
+    },
+    {
+      "k": "FB03 — 凭证显示（逐字段详解）",
+      "label": "FB03 — 凭证显示（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fb03",
+      "type": "页面"
+    },
+    {
+      "k": "FB08 — 凭证冲销（逐字段详解）",
+      "label": "FB08 — 凭证冲销（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fb08",
+      "type": "页面"
+    },
+    {
+      "k": "FB50 — 总账凭证录入（逐字段详解）",
+      "label": "FB50 — 总账凭证录入（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fb50",
+      "type": "页面"
+    },
+    {
+      "k": "FBL1N — 供应商行项目清单（逐字段详解）",
+      "label": "FBL1N — 供应商行项目清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fbl1n",
+      "type": "页面"
+    },
+    {
+      "k": "FBL3N — 总账科目行项目清单（逐字段详解）",
+      "label": "FBL3N — 总账科目行项目清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fbl3n",
+      "type": "页面"
+    },
+    {
+      "k": "FBL5N — 客户行项目清单（逐字段详解）",
+      "label": "FBL5N — 客户行项目清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fbl5n",
+      "type": "页面"
+    },
+    {
+      "k": "FS00 — 科目主数据集中维护（逐字段详解）",
+      "label": "FS00 — 科目主数据集中维护（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/fs00",
+      "type": "页面"
+    },
+    {
+      "k": "KSB1 — 成本中心实际行项目（逐字段详解）",
+      "label": "KSB1 — 成本中心实际行项目（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/ksb1",
+      "type": "页面"
+    },
+    {
+      "k": "KSU5 — 实际分摊执行（逐字段详解）",
+      "label": "KSU5 — 实际分摊执行（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/ksu5",
+      "type": "页面"
+    },
+    {
+      "k": "MB51 — 物料凭证清单（逐字段详解）",
+      "label": "MB51 — 物料凭证清单（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/mb51",
+      "type": "页面"
+    },
+    {
+      "k": "MIGO — 收发货过账（逐字段详解）",
+      "label": "MIGO — 收发货过账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/migo",
+      "type": "页面"
+    },
+    {
+      "k": "MIRO — 发票校验过账（逐字段详解）",
+      "label": "MIRO — 发票校验过账（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/miro",
+      "type": "页面"
+    },
+    {
+      "k": "MMPV — 关闭 MM 期间（逐字段详解）",
+      "label": "MMPV — 关闭 MM 期间（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/mmpv",
+      "type": "页面"
+    },
+    {
+      "k": "OB52 — 开闭账期间维护（逐字段详解）",
+      "label": "OB52 — 开闭账期间维护（逐字段详解）",
+      "url": "/01-daily-ops/tcode-cards/ob52",
+      "type": "页面"
+    },
+    {
+      "k": "高频 T-Code 速查与详解",
+      "label": "高频 T-Code 速查与详解",
+      "url": "/01-daily-ops/tcode-cards",
+      "type": "页面"
+    },
+    {
+      "k": "年结检查清单",
+      "label": "年结检查清单",
+      "url": "/01-daily-ops/year-end-checklist",
+      "type": "页面"
+    },
+    {
+      "k": "蓝图关键问题清单",
+      "label": "蓝图关键问题清单",
+      "url": "/02-project/blueprint-questions",
+      "type": "页面"
+    },
+    {
+      "k": "上线切换 Runbook",
+      "label": "上线切换 Runbook",
+      "url": "/02-project/go-live-runbook",
+      "type": "页面"
+    },
+    {
+      "k": "上线后 Hypercare 清单 — 前 30 天稳定性检查",
+      "label": "上线后 Hypercare 清单 — 前 30 天稳定性检查",
+      "url": "/02-project/hypercare",
+      "type": "页面"
+    },
+    {
+      "k": "集成测试脚本模板",
+      "label": "集成测试脚本模板",
+      "url": "/02-project/integration-test",
+      "type": "页面"
+    },
+    {
+      "k": "作业类型与作业价格 — CO 服务计价的引擎",
+      "label": "作业类型与作业价格 — CO 服务计价的引擎",
+      "url": "/03-config-notes/activity-type-price",
+      "type": "页面"
+    },
+    {
+      "k": "F110 自动付款 — FBZP 配置树与运行排错",
+      "label": "F110 自动付款 — FBZP 配置树与运行排错",
+      "url": "/03-config-notes/ap-auto-payment",
+      "type": "页面"
+    },
+    {
+      "k": "特别总账标识 — 预付款、汇票与备选统驭科目",
+      "label": "特别总账标识 — 预付款、汇票与备选统驭科目",
+      "url": "/03-config-notes/ap-special-gl",
+      "type": "页面"
+    },
+    {
+      "k": "信贷管理 — 从简单信贷到 FSCM",
+      "label": "信贷管理 — 从简单信贷到 FSCM",
+      "url": "/03-config-notes/ar-credit-management",
+      "type": "页面"
+    },
+    {
+      "k": "S/4HANA 新资产会计 — 与 ECC 的关键差异",
+      "label": "S/4HANA 新资产会计 — 与 ECC 的关键差异",
+      "url": "/03-config-notes/asset-s4-diff",
+      "type": "页面"
+    },
+    {
+      "k": "资产转移与报废 — 生命周期末端处理",
+      "label": "资产转移与报废 — 生命周期末端处理",
+      "url": "/03-config-notes/asset-transfer-retirement",
+      "type": "页面"
+    },
+    {
+      "k": "在建工程（AuC）— 从投资归集到资产转固",
+      "label": "在建工程（AuC）— 从投资归集到资产转固",
+      "url": "/03-config-notes/auc-settlement",
+      "type": "页面"
+    },
+    {
+      "k": "FICO 权限基础 — PFCG 角色与公司代码级控制",
+      "label": "FICO 权限基础 — PFCG 角色与公司代码级控制",
+      "url": "/03-config-notes/authorization-basics",
+      "type": "页面"
+    },
+    {
+      "k": "银行对账 — 电子对账单导入与调节",
+      "label": "银行对账 — 电子对账单导入与调节",
+      "url": "/03-config-notes/bank-reconciliation",
+      "type": "页面"
+    },
+    {
+      "k": "中国本地化 — 金税、增值税与应付暂估实践",
+      "label": "中国本地化 — 金税、增值税与应付暂估实践",
+      "url": "/03-config-notes/cn-localization",
+      "type": "页面"
+    },
+    {
+      "k": "成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "label": "成本中心分摊（Assessment）— 共用费用下摊到业务部门",
+      "url": "/03-config-notes/co-assessment",
+      "type": "页面"
+    },
+    {
+      "k": "CO-PA 获利能力分析 — 特征、值字段与两代架构",
+      "label": "CO-PA 获利能力分析 — 特征、值字段与两代架构",
+      "url": "/03-config-notes/co-pa",
+      "type": "页面"
+    },
+    {
+      "k": "生产订单成本归集与结算 — KO88/CO88",
+      "label": "生产订单成本归集与结算 — KO88/CO88",
+      "url": "/03-config-notes/co-pc-order-settlement",
+      "type": "页面"
+    },
+    {
+      "k": "标准成本估算 — CK11N/CK24 从估价到发布",
+      "label": "标准成本估算 — CK11N/CK24 从估价到发布",
+      "url": "/03-config-notes/co-pc-standard-cost",
+      "type": "页面"
+    },
+    {
+      "k": "WIP 计算与差异分析 — KKAX/KKAO",
+      "label": "WIP 计算与差异分析 — KKAX/KKAO",
+      "url": "/03-config-notes/co-pc-wip-variance",
+      "type": "页面"
+    },
+    {
+      "k": "凭证类型与号码段 — 过账可追溯的骨架",
+      "label": "凭证类型与号码段 — 过账可追溯的骨架",
+      "url": "/03-config-notes/doc-type-number-range",
+      "type": "页面"
+    },
+    {
+      "k": "凭证拆分（Document Splitting）— S/4 分部报表的引擎",
+      "label": "凭证拆分（Document Splitting）— S/4 分部报表的引擎",
+      "url": "/03-config-notes/document-splitting",
+      "type": "页面"
+    },
+    {
+      "k": "财务报表版本（FSV）— 从科目到资产负债表",
+      "label": "财务报表版本（FSV）— 从科目到资产负债表",
+      "url": "/03-config-notes/fsv-financial-statement",
+      "type": "页面"
+    },
+    {
+      "k": "字段状态组 — 科目字段输入控制与冲突排查",
+      "label": "字段状态组 — 科目字段输入控制与冲突排查",
+      "url": "/03-config-notes/gl-field-status",
+      "type": "页面"
+    },
+    {
+      "k": "跨公司代码交易 — 集团内部往来与对账",
+      "label": "跨公司代码交易 — 集团内部往来与对账",
+      "url": "/03-config-notes/intercompany",
+      "type": "页面"
+    },
+    {
+      "k": "内部订单 — 临时成本归集的多面手",
+      "label": "内部订单 — 临时成本归集的多面手",
+      "url": "/03-config-notes/internal-order",
+      "type": "页面"
+    },
+    {
+      "k": "数据迁移工具 — Migration Cockpit 与 LSMW 怎么选",
+      "label": "数据迁移工具 — Migration Cockpit 与 LSMW 怎么选",
+      "url": "/03-config-notes/migration-tools",
+      "type": "页面"
+    },
+    {
+      "k": "物料分类账结算 — S/4 月结的第一道关",
+      "label": "物料分类账结算 — S/4 月结的第一道关",
+      "url": "/03-config-notes/ml-closing-s4",
+      "type": "页面"
+    },
+    {
+      "k": "OBYC — MM-FI 自动记账科目确定",
+      "label": "OBYC — MM-FI 自动记账科目确定",
+      "url": "/03-config-notes/mm-fi-obyc",
+      "type": "页面"
+    },
+    {
+      "k": "多币种与汇率 — 从录入到期末评估",
+      "label": "多币种与汇率 — 从录入到期末评估",
+      "url": "/03-config-notes/multi-currency",
+      "type": "页面"
+    },
+    {
+      "k": "并行账簿 — 本地准则与国际准则并行记账",
+      "label": "并行账簿 — 本地准则与国际准则并行记账",
+      "url": "/03-config-notes/parallel-ledger",
+      "type": "页面"
+    },
+    {
+      "k": "付款条件与现金折扣 — 到期日与清账金额的地基",
+      "label": "付款条件与现金折扣 — 到期日与清账金额的地基",
+      "url": "/03-config-notes/payment-terms",
+      "type": "页面"
+    },
+    {
+      "k": "利润中心会计 — 分部报表的维度骨架",
+      "label": "利润中心会计 — 分部报表的维度骨架",
+      "url": "/03-config-notes/profit-center",
+      "type": "页面"
+    },
+    {
+      "k": "SD 定价过程 — 一张发票金额怎么算出来的",
+      "label": "SD 定价过程 — 一张发票金额怎么算出来的",
+      "url": "/03-config-notes/sd-pricing",
+      "type": "页面"
+    },
+    {
+      "k": "SD 收入科目确定 — 从定价条件到收入科目",
+      "label": "SD 收入科目确定 — 从定价条件到收入科目",
+      "url": "/03-config-notes/sd-revenue-account",
+      "type": "页面"
+    },
+    {
+      "k": "税务配置全解 — 从税码到申报数据",
+      "label": "税务配置全解 — 从税码到申报数据",
+      "url": "/03-config-notes/tax-configuration",
+      "type": "页面"
+    },
+    {
+      "k": "现金头寸与流动性监控 — 资金日管理入门",
+      "label": "现金头寸与流动性监控 — 资金日管理入门",
+      "url": "/03-config-notes/tr-cash-position",
+      "type": "页面"
+    },
+    {
+      "k": "验证与替代 — 凭证的自动校验和自动补值",
+      "label": "验证与替代 — 凭证的自动校验和自动补值",
+      "url": "/03-config-notes/validation-substitution",
+      "type": "页面"
+    },
+    {
+      "k": "排查实战 06 — AFAB 折旧跑不动：从错误清单到技术清账",
+      "label": "排查实战 06 — AFAB 折旧跑不动：从错误清单到技术清账",
+      "url": "/04-troubleshooting/case-afab",
+      "type": "页面"
+    },
+    {
+      "k": "排查实战 05 — F110 零提案：从排除码反推主数据与 FBZP",
+      "label": "排查实战 05 — F110 零提案：从排除码反推主数据与 FBZP",
+      "url": "/04-troubleshooting/case-f110",
+      "type": "页面"
+    },
+    {
+      "k": "排查实战 01 — F5 100：从科目不存在到 FS00 科目层缺失",
+      "label": "排查实战 01 — F5 100：从科目不存在到 FS00 科目层缺失",
+      "url": "/04-troubleshooting/case-f5-100",
+      "type": "页面"
+    },
+    {
+      "k": "排查实战 02 — 月结 GR/IR 清不掉：从余额倒推清账链",
+      "label": "排查实战 02 — 月结 GR/IR 清不掉：从余额倒推清账链",
+      "url": "/04-troubleshooting/case-gr-ir",
+      "type": "页面"
+    },
+    {
+      "k": "排查实战 04 — MIGO 收货无 FI 凭证：MM-FI 集成链反查",
+      "label": "排查实战 04 — MIGO 收货无 FI 凭证：MM-FI 集成链反查",
+      "url": "/04-troubleshooting/case-migo-no-fi",
+      "type": "页面"
+    },
+    {
+      "k": "排查实战 03 — 月初第一笔过不了账：期间问题三层排查",
+      "label": "排查实战 03 — 月初第一笔过不了账：期间问题三层排查",
+      "url": "/04-troubleshooting/case-period",
+      "type": "页面"
+    },
+    {
+      "k": "排查方法论 — 从报错到错误配置",
+      "label": "排查方法论 — 从报错到错误配置",
+      "url": "/04-troubleshooting/playbook-intro",
+      "type": "页面"
+    },
+    {
+      "k": "如何贡献内容",
+      "label": "如何贡献内容",
+      "url": "/99-contribute/how-to-contribute",
+      "type": "页面"
+    },
+    {
+      "k": "问题诊断中心",
+      "label": "问题诊断中心",
+      "url": "/diagnose",
+      "type": "页面"
+    },
+    {
+      "k": "/index",
+      "label": "/index",
+      "url": "/index",
+      "type": "页面"
+    },
+    {
+      "k": "按模块浏览",
+      "label": "按模块浏览",
+      "url": "/module-index",
+      "type": "页面"
+    },
+    {
+      "k": "T-Code 总索引",
+      "label": "T-Code 总索引",
+      "url": "/tcode-index",
+      "type": "页面"
+    }
+  ]
+}
